@@ -11,3 +11,5 @@ let names=['sardor',"tangir","alla","amira","ruslan","daler"]
 
 let evenss=names.filter(names=>names.length%2===0)
 console.log(evenss)
+
+
