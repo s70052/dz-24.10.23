@@ -467,7 +467,7 @@ if (userMoney < cars.price) {
 } else if (userMoney > cars.price) {
   let remaining = userMoney - cars.price
   alert(`Ваша сдача: ${remaining}`)
-} else {
+} else if (userMoney===cars.price){
   alert('Поздравляем ')
 }
    
