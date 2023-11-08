@@ -1113,11 +1113,19 @@
 // }while(pwd!==7777)
  
 
-let i
-let num= 3
+// let i
+// let num= 3
 
-while (num > 0) {
-  i = prompt("kkk:")
-  num--
-}
+// while (num > 0) {
+//   i = prompt("kkk:")
+//   num--
+// }
+
+
+let num =3
+let i
+do{
+i=prompt('jijfowe')
+num--
+}while(num>0)
 
