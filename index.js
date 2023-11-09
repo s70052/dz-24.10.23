@@ -1123,17 +1123,155 @@
 // number++
 // }while(number<3)
 
-let pwd
-let n = 0
+// let pwd
+// let n = 0
 
-while( n < 3){
-pwd = +prompt("password")
-if(pwd !== 7777){
-n++
+// while( n < 3){
+// pwd = +prompt("password")
+// if(pwd !== 7777){
+// n++
+// }
+// else{
+// alert("welcome")
+// break
+// }
+// }
+
+// let products = [
+//   {
+//       name: "soda",
+//       price: 10000,
+//       godno: 2040
+//   },
+//   {
+//       name: "chocolate",
+//       price: 8000,
+//       godno: 2024
+//   },
+//   {
+//       name: "ice cream",
+//       price: 13000,
+//       godno: 2023
+//   },
+//   {
+//       name: "yogurt",
+//       price: 9000,
+//       godno: 2023
+//   },
+//   {
+//       name: "lienergy",
+//       price: 21000,
+//       godno: 2024
+//   },
+//   {
+//       name: "fusetea",
+//       price: 7000,
+//       godno: 2024
+//   },
+//   {
+//       name: "lays",
+//       price: 18000,
+//       godno: 2023
+//   },
+//   {
+//       name: "18+",
+//       price: 8000,
+//       godno: 2024
+//   },
+//   {
+//       name: "namak",
+//       price: 2000,
+//       godno: 2024
+//   },
+//   {
+//       name: "orange juice",
+//       price: 10000,
+//       godno: 2024
+//   },
+//   {
+//       name: "clear man",
+//       price: 50000,
+//       godno: 2025
+//   },
+//   {
+//       name: "saxar",
+//       price: 12000,
+//       godno: 2025
+//   },
+//   {
+//       name: "moloko",
+//       price: 11000,
+//       godno: 2023
+//   },
+//   {
+//       name: "pechenki",
+//       price: 15000,
+//       godno: 2024
+//   },
+//   {
+//       name: "muka",
+//       price: 150000,
+//       godno: 2024
+
+//   },
+// ]
+
+// let discount = +prompt('discount %')
+
+// for(let item of products) {
+// console.log( item.price -(item.price / 100 *discount))
+// }
+
+let people = [
+  {
+      name: "bobur",
+      age: 43,
+      isMarried: false,
+      wifes: ['kamila', 'safir', 'allayor']
+  },
+  {
+      name: "ismail",
+      age: 12,
+      isMarried: true,
+      wifes: ['nikita', 'malika']
+  },
+  {
+      name: "allayor",
+      age: 14,
+      isMarried: true,
+      wifes: ['denis', 'dima', 'dimon', 'xbegim']
+  },
+  {
+      name: "sarodr ml",
+      age: 18,
+      isMarried: false,
+      wifes: ['safiya']
+  },
+  {
+    name: "sarodr st",
+    age: 19,
+    isMarried: false,
+    wifes: ['safiya']
+},
+]
+let guilties = []
+let not_guilty =[]
+
+for(let i of people){
+if(i.age <18 ){
+guilties.push(i)
 }
-else{
-alert("welcome")
-break
+if(i.wifes.length >1){
+guilties.push(i)
+} else{
+not_guilty.push(i)
 }
-  
 }
+
+console.log(guilties)
+console.log(not_guilty)
+
+
+
+
+
