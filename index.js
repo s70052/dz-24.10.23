@@ -1113,19 +1113,20 @@
 // }while(pwd!==7777)
  
 
-// let i
-// let num= 3
-
-// while (num > 0) {
-//   i = prompt("kkk:")
-//   num--
-// }
 
 
-let num =3
-let i
+
+let number =0
+let item
 do{
-i=prompt('jijfowe')
-num--
-}while(num>0)
+item=prompt('jijfowe')
+number++
+}while(number<3)
 
+let i
+let a= 0
+
+while (a < 3) {
+  i = prompt("kkk:")
+  a++
+}
