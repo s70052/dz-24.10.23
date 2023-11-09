@@ -1116,17 +1116,24 @@
 
 
 
-let number =0
-let item
-do{
-item=prompt('jijfowe')
-number++
-}while(number<3)
+// let number =0
+// let item
+// do{
+// item=prompt('jijfowe')
+// number++
+// }while(number<3)
 
-let i
-let a= 0
+let pwd
+let n = 0
 
-while (a < 3) {
-  i = prompt("kkk:")
-  a++
+while( popitki < 3){
+pwd = +prompt("password")
+if(pwd !== 7777){
+n++
+}
+else{
+alert("welcome")
+break
+}
+  
 }
