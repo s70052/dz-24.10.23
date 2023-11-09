@@ -1126,7 +1126,7 @@
 let pwd
 let n = 0
 
-while( popitki < 3){
+while( n < 3){
 pwd = +prompt("password")
 if(pwd !== 7777){
 n++
