@@ -1258,10 +1258,7 @@ let guilties = []
 let not_guilty =[]
 
 for(let i of people){
-if(i.age <18 ){
-guilties.push(i)
-}
-if(i.wifes.length >1){
+if(i.age <18 || i.wifes.length >1 ){
 guilties.push(i)
 } else{
 not_guilty.push(i)
