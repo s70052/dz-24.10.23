@@ -1257,17 +1257,30 @@ let people = [
 let guilties = []
 let not_guilty =[]
 
-for(let i of people){
-if(i.age <18 || i.wifes.length >1 ){
-guilties.push(i)
+// for(let i of people){
+// if(i.age <18 || i.wifes.length >1 ){
+// guilties.push(i)
+// } else{
+// not_guilty.push(i)
+// }
+// }
+
+// console.log(guilties)
+// console.log(not_guilty)
+
+
+
+
+for (let i = 0; i < people.length; i++){
+if(people[i].age < 18 || people[i].wifes.length >1){
+guilties.push(people[i])
 } else{
-not_guilty.push(i)
-}
+not_guilty.push(people[i])
 }
 
+}
 console.log(guilties)
 console.log(not_guilty)
-
 
 
 
