@@ -1222,40 +1222,40 @@
 // console.log( item.price -(item.price / 100 *discount))
 // }
 
-let people = [
-  {
-      name: "bobur",
-      age: 43,
-      isMarried: false,
-      wifes: ['kamila', 'safir', 'allayor']
-  },
-  {
-      name: "ismail",
-      age: 12,
-      isMarried: true,
-      wifes: ['nikita', 'malika']
-  },
-  {
-      name: "allayor",
-      age: 14,
-      isMarried: true,
-      wifes: ['denis', 'dima', 'dimon', 'xbegim']
-  },
-  {
-      name: "sarodr ml",
-      age: 18,
-      isMarried: false,
-      wifes: ['safiya']
-  },
-  {
-    name: "sarodr st",
-    age: 19,
-    isMarried: false,
-    wifes: ['safiya']
-},
-]
-let guilties = []
-let not_guilty =[]
+// let people = [
+//   {
+//       name: "bobur",
+//       age: 43,
+//       isMarried: false,
+//       wifes: ['kamila', 'safir', 'allayor']
+//   },
+//   {
+//       name: "ismail",
+//       age: 12,
+//       isMarried: true,
+//       wifes: ['nikita', 'malika']
+//   },
+//   {
+//       name: "allayor",
+//       age: 14,
+//       isMarried: true,
+//       wifes: ['denis', 'dima', 'dimon', 'xbegim']
+//   },
+//   {
+//       name: "sarodr ml",
+//       age: 18,
+//       isMarried: false,
+//       wifes: ['safiya']
+//   },
+//   {
+//     name: "sarodr st",
+//     age: 19,
+//     isMarried: false,
+//     wifes: ['safiya']
+// },
+// ]
+// let guilties = []
+// let not_guilty =[]
 
 // for(let i of people){
 // if(i.age <18 || i.wifes.length >1 ){
@@ -1271,17 +1271,234 @@ let not_guilty =[]
 
 
 
-for (let i = 0; i < people.length; i++){
-if(people[i].age < 18 || people[i].wifes.length >1){
-guilties.push(people[i])
-} else{
-not_guilty.push(people[i])
+// for (let i = 0; i < people.length; i++){
+// if(people[i].age < 18 || people[i].wifes.length >1){
+// guilties.push(people[i])
+// } else{
+// not_guilty.push(people[i])
+// }
+
+// }
+// console.log(guilties)
+// console.log(not_guilty)
+
+// let products = [
+//     {
+//      name: "moloko",
+//      type: "milk",
+//      price: 12000
+//     },
+//     {
+//      name: "apple",
+//      type: "fruit",
+//      price: 20000
+//     },
+//     {
+//      name: "sakura",
+//      type: "alcohol",
+//      price: 20000
+//     },
+//     {
+//      name: "yogurt",
+//      type: "milk",
+//      price: 8000
+//     },
+//     {
+//      name: "banan",
+//      type: "fruit",
+//      price: 25000
+//     },
+//     {
+//      name: "pivo",
+//      type: "alcohol",
+//      price: 14000
+//     },
+//     {
+//      name: "tvorog",
+//      type: "milk",
+//      price: 11000
+//     },
+//     {
+//      name: "alphapvp",
+//      type: "alcohol",
+//      price: 80000
+//     },
+//     {
+//      name: "konyak AMIR",
+//      type: "alcohol",
+//      price: 1000
+//     },
+//     {
+//      name: "smetana",
+//      type: "milk",
+//      price: 12500
+//     },
+//  ]
+ 
+ 
+//  let categories = [
+//      {
+//          type: "milk",
+//          amount: 0
+//      },
+//      {
+//          type: "alcohol",
+//          amount: 0
+//      },
+//      {
+//          type: "fruit",
+//          amount: 0
+//      },
+//  ]
+
+
+//  for (let i = 0; i < products.length; i++){
+//     for (let j = 0; j < categories.length; j++){
+//         if(products[i].type===categories[j].type){
+// categories[j].amount++
+//  }
+//     }
+//  }
+
+
+// console.table(categories)
+
+// for (let i = 1; i <= 10; i++) {
+//         for (let j = 1; j <= 10; j++) {
+//           console.log(i + "*" + j + "=" + (i*j));
+//         }
+//       }
+
+//   for (let i=5;i>0;i--){
+//     for(let k=0; k<i;k++){
+//         document.write(`*`)
+//     }
+//     document.write(`<br/>`)
+//   }
+
+let arr = [
+    {
+        id: Math.random(),
+        name: 'Timur',
+        info: {
+            school: '235',
+            faculity: 'SMM'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Imran',
+        info: {
+            school: 'ne izvestno',
+            faculity: 'programming'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Aminjon',
+        info: {
+            school: '444',
+            faculity: 'Dizayn'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Muxammad',
+        info: {
+            school: '5555',
+            faculity: 'Backend'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Timur',
+        info: {
+            school: '235',
+            faculity: 'SMM'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Imran',
+        info: {
+            school: 'ne izvestno',
+            faculity: 'programming'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Aminjon',
+        info: {
+            school: '444',
+            faculity: 'Dizayn'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Muxammad',
+        info: {
+            school: '5555',
+            faculity: 'Backend'
+        },
+    },
+]
+
+let categories = [
+    {
+        course: ' SMM',
+        count: 0
+    },
+    {
+        course: 'PROGRAMMING',
+        count: 0
+    },
+    {
+        course: '     3DSMAX',
+        count: 0
+    },
+    {
+        course: ' DIZAYN',
+        count: 0
+    },
+    {       
+        course: '   BACKEND',
+        count: 0
+    },
+]
+
+
+
+for (let i = 0; i < arr.length; i++){
+let item = arr[i]
+for (let k = 0; k < categories.length; k++){
+let i =categories[k]
+if(item.info.faculity.toUpperCase()===i.course.trim()){
+i.count++
 }
-
 }
-console.log(guilties)
-console.log(not_guilty)
-
-
-
-
+}
+console.log(categories)
