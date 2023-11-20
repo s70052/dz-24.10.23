@@ -1666,21 +1666,14 @@ checkAge()
 //         alert('дебил')
 //     }
 
-
-
 function maxName(name1, name2, name3) {
-    let names = [name1, name2, name3];
-
-    for (let name of names) {
-        if (name.length > name1) {
-            console.log(name1)
-        } else if (name.length > name2) {
-            console.log(name2);
-        } else {
-            console.log(name3)
-        }
+    if (name1.length >= name2.length && name1.length >= name3.length) {
+        console.log(name1)
+    } else if (name2.length >= name1.length && name2.length >= name3.length) {
+        console.log(name2);
+    } else {
+        console.log(name3)
     }
-
 }
 maxName('Alex', 'George', 'Michael');
 
@@ -1688,10 +1681,10 @@ maxName('Alex', 'George', 'Michael');
 
 
 function proportion(a, b, c) {
-    console.log(a * c / b);
+  console.log(a * c / b); 
 }
 
-proportion(2, 4, 6)
+proportion(2,4,6)
 
 
 
