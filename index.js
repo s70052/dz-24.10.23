@@ -1655,16 +1655,7 @@ checkAge()
 
 
 
-// let a = prompt('сколько тебе лет')
-//     if (a >= 18) {
-//         alert('добро пожаловать')
-//     } else if (a < 18) {
-//         alert(' повзрослей')
-//     } else if (a<0 ){
-//         alert('дебил')
-//     } else{
-//         alert('дебил')
-//     }
+
 
 
 
@@ -1694,6 +1685,18 @@ function proportion(a, b, c) {
 
 proportion(2, 4, 6)
 
+
+
+function find_min(num, num_two) {
+    let s = Math.min(num, num_two)
+    if (s === num) {
+        console.log(s)
+    }
+}
+find_min(1, 2)
+find_min([1, 2])
+find_min({ a: 1, b: 2 })
+find_min({ a: 1, b: 2 }, { a: 11, b: 12 })
 
 
 
