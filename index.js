@@ -1639,7 +1639,7 @@ function generateRandom(random) {
     for (let i of b_c) {
       result += b_c.charAt(Math.random() * b_c.length)
     }
-   return result
+   return random
   }
 
   console.log(
@@ -1652,19 +1652,6 @@ function generateRandom(random) {
   let g =f.sort((a,b)=>a-b)
   console.log(g)
 
-// let unsortedArr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
-// let sortedArr = [];
 
-// while (unsortedArr.length > 0) {
-//   let minIndex = 0;
-//   for (let i = 1; i < unsortedArr.length; i++) {
-//     if (unsortedArr[i] < unsortedArr[minIndex]) {
-//       minIndex = i;
-//     }
-//   }
-//   sortedArr.push(unsortedArr[minIndex]);
-//   unsortedArr.splice(minIndex, 1);
-// }
-// console.log(sortedArr);
 
  
