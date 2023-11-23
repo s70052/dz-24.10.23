@@ -1632,22 +1632,23 @@
 // checkName('alex')
 // checkName('safir')
 // checkName('Amira')
-function generateRandomId(length) {
-    let result = '';
-    let characters = 'ABCDEjklmuvwxyz123456789';
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.random() * characters.length);
+
+function generateRandom(random) {
+    let result = ''
+    let characters = 'ABCDEjklmuvwxyz123456789'
+    for (let i = 0; i < random; i++) {
+      result=result + characters.charAt(Math.random() * characters.length)
     }
    return result
   }
 
   console.log(
-    generateRandomId(6)
+    generateRandom(6)
   )
 
   let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
   let g =f.sort((a,b)=>a-b)
-  console.log(g);
+  console.log(g)
 
 // let unsortedArr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 // let sortedArr = [];
