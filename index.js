@@ -1633,13 +1633,13 @@
 // checkName('safir')
 // checkName('Amira')
 
-function generateRandom(random) {
+function generateRandom(id) {
     let result = ''
     let b_c = 'ABCDEjklmuvwxyz123456789'
     for (let i of b_c) {
       result += b_c.charAt(Math.random() * b_c.length)
     }
-   return random
+   return result
   }
 
   console.log(
@@ -1651,6 +1651,8 @@ function generateRandom(random) {
   let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
   let g =f.sort((a,b)=>a-b)
   console.log(g)
+
+
 
 
 
