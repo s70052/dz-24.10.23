@@ -1635,16 +1635,18 @@
 
 function generateRandom(random) {
     let result = ''
-    let characters = 'ABCDEjklmuvwxyz123456789'
-    for (let i = 0; i < random; i++) {
-      result=result + characters.charAt(Math.random() * characters.length)
+    let b_c = 'ABCDEjklmuvwxyz123456789'
+    for (let i of b_c) {
+      result += b_c.charAt(Math.random() * b_c.length)
     }
    return result
   }
 
   console.log(
-    generateRandom(6)
+    generateRandom()+"@gmail.com"
   )
+
+
 
   let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
   let g =f.sort((a,b)=>a-b)
