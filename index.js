@@ -1634,12 +1634,12 @@
 // checkName('Amira')
 
 function generateRandom(id) {
-    let result = ''
+    let r = ''
     let b_c = 'ABCDEjklmuvwxyz123456789'
     for (let i of b_c) {
-      result += b_c.charAt(Math.random() * b_c.length)
+      r += b_c.charAt(Math.random() * b_c.length)
     }
-   return result
+   return r
   }
 
   console.log(
