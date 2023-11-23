@@ -1635,9 +1635,8 @@
 function generateRandomId(length) {
     let result = '';
     let characters = 'ABCDEjklmuvwxyz123456789';
-    let charactersLength = characters.length;
     for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.random() * charactersLength);
+      result += characters.charAt(Math.random() * characters.length);
     }
    return result
   }
