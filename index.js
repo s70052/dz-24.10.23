@@ -1640,8 +1640,10 @@ function generateRandomId(length) {
     }
    return result
   }
-  let r = generateRandomId(6)
-  console.log(r)
+
+  console.log(
+    generateRandomId(6)
+  )
 
   let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
   let g =f.sort((a,b)=>a-b)
