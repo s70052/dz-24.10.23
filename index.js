@@ -1632,73 +1632,35 @@
 // checkName('alex')
 // checkName('safir')
 // checkName('Amira')
-
-
-
-let s = prompt("cколько тебе лет")
-function checkAge() {
-    if (s >= 18) {
-        alert('добро пожаловать')
-    } else if (s < 18 && s >= 0) {
-        alert(' повзрослей')
-    } else if (s < 0) {
-        alert('дебил')
-    } else {
-        alert('дебил')
+function generateRandomId(length) {
+    let result = '';
+    let characters = 'ABCDEjklmuvwxyz123456789';
+    let charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.random() * charactersLength);
     }
+   return result
+  }
+  let r = generateRandomId(6)
+  console.log(r)
 
-}
-checkAge()
+  let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
+  let g =f.sort((a,b)=>a-b)
+  console.log(g);
 
+// let unsortedArr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+// let sortedArr = [];
 
+// while (unsortedArr.length > 0) {
+//   let minIndex = 0;
+//   for (let i = 1; i < unsortedArr.length; i++) {
+//     if (unsortedArr[i] < unsortedArr[minIndex]) {
+//       minIndex = i;
+//     }
+//   }
+//   sortedArr.push(unsortedArr[minIndex]);
+//   unsortedArr.splice(minIndex, 1);
+// }
+// console.log(sortedArr);
 
-
-
-
-
-
-
-
-function maxName(name1, name2, name3) {
-
-    let names = [name1, name2, name3];
-    let maxLength = Math.max(name1.length, name2.length, name3.length);
-    let maxNames = names.filter(name => {
-        if (name.length === maxLength) {
-            console.log(maxNames);
-        }
-
-    }
-    );
-
-
-
-}
-maxName('Alex', 'George', 'Michael');
-
-
-
-
-function proportion(a, b, c) {
-    console.log(a * c / b);
-}
-
-proportion(2, 4, 6)
-
-
-
-function find_min(num, num_two) {
-    let s = Math.min(num, num_two)
-    if (s === num) {
-        console.log(s)
-    }
-}
-find_min(1, 2)
-find_min([1, 2])
-find_min({ a: 1, b: 2 })
-find_min({ a: 1, b: 2 }, { a: 11, b: 12 })
-
-
-
-
-
+ 
