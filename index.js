@@ -1633,27 +1633,112 @@
 // checkName('safir')
 // checkName('Amira')
 
-function generateRandom(id) {
-    let r = ''
-    let b_c = 'ABCDEjklmuvwxyz123456789'
-    for (let i of b_c) {
-      r += b_c.charAt(Math.random() * b_c.length)
+// function generateRandom(id) {
+//     let r = ''
+//     let b_c = 'ABCDEjklmuvwxyz123456789'
+//     for (let i of b_c) {
+//       r += b_c.charAt(Math.random() * b_c.length)
+//     }
+//    return r
+//   }
+
+//   console.log(
+//     generateRandom()+"@gmail.com"
+//   )
+
+
+
+//   let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
+//   let g =f.sort((a,b)=>a-b)
+//   console.log(g)
+
+
+
+// function romains(str) {
+//   let map = {
+//     1: "I",
+//     5: "V",
+//     10: "X",
+//     15: "XV",
+//     50: "L",
+//     100: "C",
+//     500: "D",
+//     1000: "M"
+//   }
+//   let result = 0
+//   let prev = 0
+//   for (let i = str.length -1; i >= 0; i--) {
+
+//     let curr = map[str[i]]
+//     if (curr > prev) {
+//       result += curr
+//     } else {
+//       result -= curr
+//     }
+//     prev = curr
+
+//   }
+// return result
+
+// }
+// console.log(
+// romains(5),
+// romains(500)
+// );
+
+
+function romains(num) {
+  let map = [
+    {
+      value: 1000,
+      numeral: "M"
+    },
+    {
+      value: 500,
+      numeral: "D"
+    },
+    {
+      value: 100,
+      numeral: "C"
+    },
+    {
+      value: 50,
+      numeral: "L"
+    },
+    {
+      value: 10,
+      numeral: "X"
+    },
+    {
+      value: 5,
+      numeral: "V"
+    },
+    {
+      value: 1,
+      numeral: "I"
     }
-   return r
+  ]
+
+  let result = ""
+  for (let i = 0; i < map.length; i++) {
+    if (num >= map[i].value) {
+      result += map[i].numeral
+      num -= map[i].value
+    }
   }
-
-  console.log(
-    generateRandom()+"@gmail.com"
-  )
-
-
-
-  let f=[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5,0,13,34]
-  let g =f.sort((a,b)=>a-b)
-  console.log(g)
-
-
-
-
-
+  return result
+  
+}
+console.log(
+  romains(10),
+  romains(50)
+  );
  
+
+
+
+
+
+
+
+
