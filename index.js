@@ -1727,13 +1727,13 @@ function romains(num) {
     }
   }
   return result
-  
+
 }
 console.log(
   romains(10),
   romains(50)
-  );
- 
+);
+
 
 
 
