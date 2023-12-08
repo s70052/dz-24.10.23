@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.a {
+    position: absolute;
+    align-items: center;
+    width: 760px;
+    height: 450px;
+    background: rgb(18, 5, 66);
+    border-radius: 20px;
+
+}
+
+body {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background: rgb(2, 2, 58);
+}
+.wrapp{
+    position: relative;
+}
+.b {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: rgb(7, 177, 255);
+    top: -80px;
+    right: 280px;
+    z-index: -1;
+    border-radius: 20px
+}
+
+#num {
+    font-size: 100px;
+    color: white;
+    align-items: center;
+    padding-inline: 350px 0;
+    padding-block: 50px 0;
+}
+
+.plus button {
+    width: 140px;
+    height: 90px;
+    position: absolute;
+    left: 40px;
+    bottom: 150px;
+    font-size: 60px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.obnulit button {
+    width: 140px;
+    height: 90px;
+    position: absolute;
+    left: 230px;
+    bottom: 150px;
+    font-size: 60px;
+
+    border-radius: 20px;
+    border: 4px;
+
+}
+
+.minus button {
+    width: 140px;
+    height: 90px;
+    position: absolute;
+    left: 420px;
+    bottom: 150px;
+    font-size: 60px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.random button {
+    width: 140px;
+    height: 90px;
+    position: absolute;
+    left: 600px;
+    bottom: 150px;
+    font-size: 60px;
+    border-radius: 20px;
+    border: 0
+}
+.j{
+    font-size: 100px;
+    color: rgb(255, 0, 0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
