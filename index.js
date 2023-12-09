@@ -1,4 +1,5 @@
-
+let a=document.querySelector('#num')
+let value=0
 
 let b = document.querySelector('.plus')
 let c = document.querySelector('.obnulit')
