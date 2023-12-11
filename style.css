@@ -7,99 +7,333 @@
 .wrap {
     width: 1200px;
     margin: 0 auto;
-    position: relative;
-    
-}
-
-.a {
-    position: absolute;
-    align-items: center;
-    width: 760px;
-    height: 450px;
-    background: rgb(18, 5, 66);
-    border-radius: 20px;
 
 }
 
-body {
-    width: 70%;
-    height: 50vh;
+.header-box {
+    text-align: center;
     display: flex;
     align-items: center;
-    background: rgb(2, 2, 58);
+    justify-content: center;
+    gap: 30px;
+    padding-block: 20px 40px;
+   
 }
-.wrapp{
-    position: relative;
+
+.header-box a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
 }
-.b {
+
+.header_box_2 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(192, 192, 192, 0.192);
+    width: 970px;
+    height: 80px;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    gap: 30px;
+
+}
+
+.T {
+    color: red;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.s {
+    text-decoration: none;
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rod_box {
+    padding-block: 30px 0;
+
+}
+
+.rod_box a {
+    text-decoration: none;
+    color: rgb(196, 49, 23);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rod_box p {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rod_box .m {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.glav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.e {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kcfs {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sgvdc {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    background-color: rgba(121, 121, 121, 0.068);
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    padding-block: 8px 0;
+}
+
+.btn2 {
+    background-color: rgba(151, 152, 153, 0.075);
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    padding-block: 8px 0;
+}
+
+.rod_box_2 {
+    padding-block: 60px 0;
+}
+
+.d {
+    width: 21%;
     position: absolute;
+    right: 750px;
+}
+
+.k {
+    width: 21%;
+    position: absolute;
+    right: 750px;
+
+}
+
+.wvrldc {
+    width: 25.5%;
+    position: absolute;
+    right: 718px;
+    bottom: -180px;
+}
+
+#black-button {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.952);
+    color: red;
+    border-radius: 50%;
+    border: 0;
+}
+.logorwsf{
+    width: 60%;
+}
+.srcrsd{
+    width: 35%;
+    padding-block: 5px 0;
+}
+
+
+#white-button {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 255, 0.37);
+    border: 0;
+    border-radius: 50%;
+}
+
+.glav2 {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 40px 0;
+}
+
+.bex {
+    
+    height: 500px;
+    width: 840px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: rgba(225, 226, 228, 0.5) radial-gradient(circle at 50% 0, rgba(255, 255, 255, .65), rgba(255, 255, 255, .35));
+    box-shadow:
+        inset rgba(226, 223, 223, 0.6) 0 -3px 8px,
+        inset rgba(252, 255, 255, .7) 0 3px 8px,
+        rgba(0, 0, 0, .8) 0 3px 8px 9px;
+}
+
+#foto3 {
+    padding-block: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 600px;
-    background: rgb(7, 177, 255);
-    top: -80px;
-    right: 280px;
-    z-index: -1;
-    border-radius: 20px
 }
 
-#num {
-    font-size: 100px;
-    color: white;
-    align-items: center;
-    padding-inline: 350px 0;
+#foto {
     padding-block: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.plus button {
-    width: 140px;
+#foto4 {
+    padding-block: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.you {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn4 {
+    width: 320px;
     height: 90px;
-    position: absolute;
-    left: 40px;
-    bottom: 150px;
-    font-size: 60px;
     border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+
+    text-align: center;
+    align-items: center;
+}
+
+.btn5 {
+    border: 1px solid black;
+    width: 320px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.btn6 {
     border: 0px;
+    width: 320px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: rgba(192, 192, 192, 0.233);
 }
 
-.obnulit button {
-    width: 140px;
-    height: 90px;
-    position: absolute;
-    left: 230px;
-    bottom: 150px;
-    font-size: 60px;
-
-    border-radius: 20px;
-    border: 4px;
-
+.fw {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.minus button {
-    width: 140px;
-    height: 90px;
-    position: absolute;
-    left: 420px;
-    bottom: 150px;
-    font-size: 60px;
-    border-radius: 20px;
+.eqda {
+    color: rgba(0, 0, 0, 0.288);
+}
+
+.bex1 {
+    padding-inline: 50px 0;
+}
+
+.btn p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn2 p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.akcal {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mm {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.adew {
+    font-size: 20px;
+    padding-inline: 10px 0;
+}
+
+.eqda {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dsv{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+#blue-button {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(225, 231, 167);
     border: 0;
+    border-radius: 50%;
+}
+marquee {
+    font-size: 50px;
+    transition: all;
+    font-weight: normal;
+    cursor: pointer;
+    text-shadow: 1px 1px 0 hsl(20,100%,50%),
+                 2px 2px 0 hsl(20,100%,50%),
+                 3px 3px 0 hsl(35,100%,50%),
+                 4px 4px 0 hsl(35,100%,50%),
+                 5px 5px 0 hsl(45,100%,50%),
+                 6px 6px 0 hsl(110, 100%, 55%),
+                 7px 7px 0 hsl(55,100%,60%),
+                 8px 8px 0 hsl(180, 100%, 65%);
+    color: hsl(0,100%,40%);
+    transition: all 1s;
+    }
+    marquee:hover {
+      text-shadow: 1px -1px 0 hsl(290,100%,40%),
+                 2px -2px 0 hsl(290,100%,40%),
+                 3px -3px 0 hsl(108, 100%, 60%),
+                 4px -4px 0 hsl(315, 100%, 50%),
+                 5px -5px 0 hsl(270, 100%, 41%),
+                 6px -6px 0 hsl(22, 100%, 50%),
+                 7px -7px 0 hsl(260,100%,85%),
+                 8px -8px 0 hsl(260,100%,90%);
+      color: hsl(300,100%,30%);
+     
+    }
+   .eakmvkdc{
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    padding-inline: 230px 0;
+    padding-block: 20px 0;
+    font-size: 50px;
+    color: rgba(185, 150, 150, 0.534);
+   }
+   
+
+.active{
+    
+    color: red;
+}
+.sacjeks{
+    width: 2%;
+}
+.act{
+    border: 2px solid blue;
+}
+.act2{
+    border: 3px solid blue;
 }
 
-.random button {
-    width: 140px;
-    height: 90px;
-    position: absolute;
-    left: 600px;
-    bottom: 150px;
-    font-size: 60px;
-    border-radius: 20px;
-    border: 0
-}
-.j{
-    font-size: 100px;
-    color: rgb(255, 0, 0);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
