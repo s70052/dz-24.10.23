@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     padding-block: 20px 40px;
    
 }
@@ -179,7 +179,9 @@
         inset rgba(226, 223, 223, 0.6) 0 -3px 8px,
         inset rgba(252, 255, 255, .7) 0 3px 8px,
         rgba(0, 0, 0, .8) 0 3px 8px 9px;
+       
 }
+
 
 #foto3 {
     padding-block: 50px 0;
@@ -225,6 +227,19 @@
     border-radius: 20px;
     background-color: white;
 }
+.btn9 {
+    border: 1px solid black;
+    width: 420px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: white;
+}
+.btns{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-block: 30px 30px;
+}
 
 .btn6 {
     border: 0px;
@@ -233,6 +248,7 @@
     border-radius: 20px;
     background-color: rgba(192, 192, 192, 0.233);
 }
+
 
 .fw {
     font-size: 18px;
@@ -244,7 +260,11 @@
 }
 
 .bex1 {
-    padding-inline: 50px 0;
+    padding-inline: 100px 0;
+    /* position: fixed;
+    right: 0; */
+    
+    
 }
 
 .btn p {
@@ -336,4 +356,48 @@ marquee {
 .act2{
     border: 3px solid blue;
 }
+.dfksvl{
+    padding-block: 3px 0;
+}
+.ckoedc{
+   font-size: 26px;
+   font-family: 'Montserrat', sans-serif;
+   color: rgba(192, 192, 192, 0.692);
+}
+.kfdo{
+    font-size: 24px;
+   font-family: 'Montserrat', sans-serif 
+}
+.ccsd{
+    padding-block: 40px 20px;
+   /* position: fixed; */
+  padding-inline: 870px 0;
+ /* top: 700px; */
+} 
+.span1{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(192, 192, 192, 0.692);
+    
+ }
+ .span2{
+    
+     font-size: 30px;
+    font-family: 'Montserrat', sans-serif 
+ }
+ .lllll{
+    text-align: center;
+    align-items: center;
+ }
+ .ckkk{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    background: rgba(192, 192, 192, 0.493);
+    align-items: center;
+    height: 60px;
 
+    border-radius:20px;
+   
+ }
