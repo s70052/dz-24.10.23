@@ -35,6 +35,7 @@ let c = document.querySelector('#white-button')
 let m =document.querySelector('#blue-button')
 let k =document.querySelector('.wvrldc')
 let h =document.querySelector('.eakmvkdc')
+let u=document.querySelector('.sss')
 
 d.onclick = () => {
     a.style.display = 'block'
@@ -61,8 +62,8 @@ m.onclick=()=>{
 }
 h.onmouseenter = () =>{
 h.classList.toggle('active')
-
 }
+
 
 let s =document.querySelector('.btn4')
 s.onclick =()=>{
@@ -83,6 +84,9 @@ x.onclick =()=>{
 let xll =document.querySelector('.btn2')
 xll.onclick =()=>{
     xll.classList.toggle('act') 
+}
+u.onmouseenter=()=>{
+    u.style.color='blue'
 }
 
 
