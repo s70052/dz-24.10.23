@@ -25,13 +25,13 @@ btn_blue.onclick = () => {
 btn_grey.onclick = () => {
     white.style.display = 'none'
     silver.style.display = 'block'
-    value.innerHTML = '$2,599'
     btn_grey.style.border = '3px solid red'
     btn_blue.style.border = 'none'
     h.innerHTML = 'Space grey'
     btn_blue.style.background = '#79797931'
     btn_grey.style.background = 'blue'
     btn_grey.style.color = 'white'
+    
 }
 
 one.onclick = () => {
