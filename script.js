@@ -7,7 +7,7 @@ let one = document.querySelector('.one')
 let two = document.querySelector('.two')
 let three = document.querySelector('.three')
 let four = document.querySelector('.four')
-let h=document.querySelector('h4')
+let h = document.querySelector('h4')
 
 
 btn_blue.onclick = () => {
@@ -16,11 +16,11 @@ btn_blue.onclick = () => {
     value.innerHTML = '$1,999'
     btn_blue.style.border = '2px solid blue'
     btn_grey.style.border = 'none'
-    btn_grey.style.background='rgb(169, 169, 223)'
-    btn_blue.style.background='blue'
-    btn_grey.style.color='white'
-    btn_blue.style.color='white'
-    h.innerHTML='White'
+    btn_grey.style.background = '#79797931'
+    btn_blue.style.background = 'blue'
+    btn_grey.style.color = 'white'
+    btn_blue.style.color = 'white'
+    h.innerHTML = 'White'
 }
 btn_grey.onclick = () => {
     white.style.display = 'none'
@@ -28,9 +28,10 @@ btn_grey.onclick = () => {
     value.innerHTML = '$2,599'
     btn_grey.style.border = '2px solid blue'
     btn_blue.style.border = 'none'
-    h.innerHTML='Space grey'
-    btn_blue.style.background='rgb(169, 169, 223)'
-  btn_grey.style.background='blue'
+    h.innerHTML = 'Space grey'
+    btn_blue.style.background = '#79797931'
+    btn_grey.style.background = 'blue'
+
 }
 
 one.onclick = () => {
