@@ -100,7 +100,13 @@ openBtn.onclick = () => {
     modal_w.style.display = "flex";
 
 }
+closeBtn.onclick=()=>{
+    modal_w.style.display='none'
 
+}
+closeBtn.onmouseenter=()=>{
+    closeBtn.classList.toggle('ackd')
+}
 modal_w.onclick = (event) => {
     if (event.target === modal_w) {
         modal_w.style.display = 'none';
