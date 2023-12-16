@@ -112,6 +112,10 @@ modal_w.onclick = (event) => {
         modal_w.style.display = 'none';
     }
 }
+let boxxx=document.querySelector('.boxxx')
+boxxx.onclick=()=>{
+    boxxx.style.border='2px solid blue'
+}
 
 let nn = document.querySelector('.dddd')
 let nnn = document.querySelector('.dddd2')

@@ -438,16 +438,18 @@ marquee:hover {
     z-index: 2;
 
 
-    
+
 }
 
 .dialog {
     width: 800px;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-    
+
 }
+
+
 
 .zag {
     font-size: 40px;
@@ -457,10 +459,12 @@ marquee:hover {
 
 .choose {
     padding-block: 8px 0px;
-    padding-inline: 15px 0;
-    font-size: 14px;
+    padding-inline: 20px 0;
+    font-size: 13px;
     color: gray;
     font-family: Roboto;
+    position: relative;
+    top: 25px;
 }
 
 .iphone {
@@ -473,8 +477,8 @@ marquee:hover {
 .spn {
     color: #050505;
     text-align: center;
-padding-inline: 50px 0;
-display: flex;
+    padding-inline: 50px 0;
+    display: flex;
     align-items: center;
     font-size: 17px;
     font-family: Roboto;
@@ -512,12 +516,20 @@ display: flex;
 }
 
 .boxxx {
-    width: 80%;
+    width: 650px;
     border: 1px solid rgb(156, 153, 153);
     height: 60px;
     border-radius: 15px;
-    margin: 0 auto;
+    padding-inline: 15px 0;
     font-family: Roboto;
+    font-size: 18px;
+    padding-block: 12px 0;
+
+}
+
+.promo2 {
+    align-items: center;
+    padding-inline: 50px 0;
 }
 
 .big-box {
@@ -536,27 +548,29 @@ display: flex;
     padding-inline: 20px 0;
     font-family: Roboto;
 }
-.close{
+
+.close {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 0;
 }
-.ackd{
+
+.ackd {
     border: 2px solid rgb(124, 124, 255);
 }
 
 .dddd {
     position: absolute;
     right: 350px;
-    top: 560px;
+    top: 580px;
     font-family: Roboto;
 }
 
 .dddd2 {
     position: absolute;
     right: 350px;
-    top: 710px;
+    top: 730px;
     font-family: Roboto;
 }
 
@@ -573,6 +587,7 @@ display: flex;
     border-top: 1px solid gray;
     display: none
 }
+
 .divvvvm {
     border-top: 1px solid gray;
     display: none
@@ -638,7 +653,7 @@ display: flex;
 .dddd3 {
     position: absolute;
     right: 350px;
-    top: 560px;
+    top: 580px;
     width: 2%;
     display: none;
 }
@@ -655,36 +670,42 @@ display: flex;
     font-weight: 600;
     padding-inline: 20px 0;
 }
-.jjjjjj{
+
+.jjjjjj {
     font-size: 25px;
-    display: none; 
+    display: none;
     font-family: Roboto;
     font-weight: 600;
-   
+
 }
-.jjjjjjj{
+
+.jjjjjjj {
     font-size: 16px;
     display: none;
     font-family: Roboto;
     font-weight: 600;
     padding-block: 5px 0;
 }
-.Tex{
+
+.Tex {
     font-family: Roboto;
     display: none;
     font-size: 16px;
     color: #00000071;
     padding-block: 10px 0;
 }
-.boz{
+
+.boz {
     display: flex;
     gap: 60px;
 }
-.boz2{
+
+.boz2 {
     display: flex;
     gap: 100px;
-   
+
 }
+
 .kk {
     font-size: 20px;
     display: none;
@@ -693,6 +714,7 @@ display: flex;
     padding-inline: 20px 0;
     padding-block: 10px 0;
 }
+
 .two_k {
     font-size: 20px;
     display: none;
@@ -701,23 +723,26 @@ display: flex;
     padding-inline: 20px 0;
     padding-block: 10px 0;
 }
-.kkk{
+
+.kkk {
     font-size: 16px;
     display: none;
     font-family: Roboto;
     color: #050505ce;
     font-weight: 400;
-    padding-block: 15px ;
+    padding-block: 15px;
 }
-.three_k{
+
+.three_k {
     font-size: 16px;
     display: none;
     font-family: Roboto;
     color: #050505ce;
     font-weight: 400;
-    padding-block: 15px ;
+    padding-block: 15px;
 }
-.kkkk{
+
+.kkkk {
     font-size: 16px;
     display: none;
     font-family: Roboto;
@@ -725,7 +750,8 @@ display: flex;
     font-weight: 400;
     padding-block: 5px 0;
 }
-.four_k{
+
+.four_k {
     font-size: 16px;
     display: none;
     font-family: Roboto;
@@ -733,12 +759,14 @@ display: flex;
     font-weight: 400;
     padding-block: 5px 0;
 }
-.ttc{
+
+.ttc {
     background-color: rgba(192, 192, 192, 0.342);
     color: #05050573;
     padding-block: 20px 0;
 }
-.five_k{
+
+.five_k {
     font-size: 16px;
     display: none;
     font-family: Roboto;
@@ -746,13 +774,15 @@ display: flex;
     font-weight: 400;
     padding-block: 5px 0;
 }
-.kkso{
+
+.kkso {
     position: absolute;
     right: 350px;
-    top: 710px;
+    top: 730px;
     width: 2%;
-   display: none;
+    display: none;
 }
+
 .glab {
     display: flex;
     gap: 150px;
@@ -764,12 +794,14 @@ display: flex;
     padding-inline: 20px 0;
     padding-block: 10px 0;
 }
-.ppp{
+
+.ppp {
     display: none;
     font-family: Roboto;
     padding-block: 10px 0;
 }
-.if2{
+
+.if2 {
     font-family: Roboto;
     display: none;
     font-size: 13px;
@@ -777,7 +809,8 @@ display: flex;
     padding-block: 10px 0;
     padding-inline: 220px 0;
 }
-.if{
+
+.if {
     display: none;
     font-size: 25px;
     font-weight: 600;
@@ -785,13 +818,15 @@ display: flex;
     padding-block: 25px 0;
     font-family: Roboto;
 }
-.rre{
+
+.rre {
     padding-block: 5px 0;
     padding-inline: 220px 0;
     font-family: Roboto;
     display: none;
 }
-.rre2{
+
+.rre2 {
     font-family: Roboto;
     display: none;
     font-size: 15px;
@@ -799,7 +834,8 @@ display: flex;
     padding-block: 10px 0;
     padding-inline: 220px 0;
 }
-.rre3{
+
+.rre3 {
     font-family: Roboto;
     display: none;
     font-size: 13px;
@@ -807,23 +843,28 @@ display: flex;
     padding-block: 10px 0;
     padding-inline: 220px 0;
 }
-.divv4{
+
+.divv4 {
     border-top: 1px solid gray;
     display: none;
 }
-.divv5{
+
+.divv5 {
     border-top: 1px solid gray;
     display: none;
 }
-.divv6{
+
+.divv6 {
     border-top: 1px solid gray;
     display: none;
 }
-.bbbo{
+
+.bbbo {
     display: flex;
     gap: 100px;
 }
-.five{
+
+.five {
     font-size: 20px;
     padding-block: 5px 0;
     font-family: Roboto;
@@ -831,32 +872,37 @@ display: flex;
     padding-inline: 20px 0;
     display: none;
 }
-.six{
+
+.six {
     font-size: 25px;
- padding-block: 10px 0;
+    padding-block: 10px 0;
     font-family: Roboto;
     font-weight: 600;
     display: none;
 }
-.seven{
+
+.seven {
     padding-inline: 220px 0;
     font-size: 16px;
     display: none;
 }
-.tex{
+
+.tex {
     padding-inline: 220px 0;
     font-size: 15px;
     color: #00000094;
     display: none;
 }
-.jcjd{
-  
+
+.jcjd {
+
     font-size: 15px;
     color: #00000094;
     display: none;
 }
-.bo2{
+
+.bo2 {
     display: flex;
     gap: 100px;
-   
+
 }
