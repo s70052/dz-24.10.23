@@ -34,6 +34,15 @@
     line-height: normal;
 }
 
+.cen {
+    color: #000;
+    font-family: Gilroy;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .cena_box {
     display: flex;
 
@@ -55,6 +64,7 @@
     font-weight: 500;
     line-height: normal;
 }
+
 .pp {
     color: #707070;
     font-family: Gilroy;
@@ -79,16 +89,18 @@
     line-height: normal;
 
 }
-.info_value4{
+
+.info_value4 {
     color: #000;
     font-family: Gilroy;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal; 
-   position: relative;
-   right: -13px;
+    line-height: normal;
+    position: relative;
+    right: -13px;
 }
+
 .info_value3 {
     color: #000;
     font-family: Gilroy;
@@ -96,8 +108,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  position: relative;
-  right: -25px;
+    position: relative;
+    right: -25px;
 }
 
 .str3 {
@@ -118,7 +130,7 @@
 }
 
 .swi {
-    padding-inline:55px 0;
+    padding-inline: 55px 0;
     padding-block: 10px 0;
 }
 
@@ -220,7 +232,7 @@
 .ballon {
     width: 10%;
 
-    animation: spin  0.0001s infinite linear;
+    animation: spin 0.0001s infinite linear;
 }
 
 .ballon4_box {
@@ -236,7 +248,7 @@
 .ballon4 {
     width: 10%;
     display: none;
-    animation: spin  0.0001s infinite linear;
+    animation: spin 0.0001s infinite linear;
 }
 
 
@@ -273,11 +285,13 @@
     bottom: 388px;
     position: relative;
 }
+
 .ballon3 {
     width: 10%;
-    animation: spin  0.0001s infinite linear;
+    animation: spin 0.0001s infinite linear;
     display: none;
 }
+
 .ballon3_box {
     align-items: center;
     display: flex;

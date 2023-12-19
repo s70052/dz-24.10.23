@@ -104,7 +104,7 @@ let num = 750;
 
 swi.onclick = () => {
     if (num >740) {
-       num-=10
-      cena.innerHTML=num +'км'
+       num-=20
+       cena.innerHTML=num +'км'
     }  
 }
