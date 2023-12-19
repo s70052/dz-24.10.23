@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cena {
+    color: #000;
+    font-family: Gilroy;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cena_box {
+    display: flex;
+
+    gap: 117px;
+    padding-inline: 350px 0;
+}
+
+.zapas {
+    color: #707070;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.box {
+    display: flex;
+    padding-block: 50px 0;
+    gap: 184px;
+    padding-inline: 350px 0;
+}
+
+.bix_zapas {
+    display: flex;
+    gap: 124px;
+    padding-block: 55px 0;
+    padding-inline: 450px 0;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+}
+.btn2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: silver;
+    border: 0;
+}
+.btn3 {
+    border: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(207, 206, 137);
+}
+.btn_box{
+    display: flex;
+    padding-block: 10px 0;
+    gap: 5px;
+    padding-inline: 440px 0;
+}
+.img2{
+    display: none;
+    width: 1240px;
+    height: auto;;
+}
+.img3{
+    display: none;
+    width: 1240px;
+    height: auto;
+}
+
+.swit {
+    padding-block: 12px 0;
+    padding-inline: 125px 0;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.toggle-switch-input {
+    display: none;
+}
+
+.toggle-switch-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #ccc;
+    position: absolute;
+    cursor: pointer;
+}
+
+.toggle-switch-input:checked+.toggle-switch-label {
+    background: #05b8ff;
+}
+
+.sw {
+    padding-block: 12px 0;
+    padding-inline: 105px 0;
+}
+
+.active{
+    border: 1px solid blue;
+}

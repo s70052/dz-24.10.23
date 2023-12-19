@@ -1,70 +1,40 @@
-let white = document.querySelector('.white')
-let silver = document.querySelector('.silver')
-let btn_blue = document.querySelector('.blue')
-let btn_grey = document.querySelector('.grey')
-let value = document.querySelector('h2')
-let one = document.querySelector('.one')
-let two = document.querySelector('.two')
-let three = document.querySelector('.three')
-let four = document.querySelector('.four')
-let h = document.querySelector('h4')
-let zagolovok=document.querySelector('h1')
+let btn=document.querySelector('.btn')
+let btn2=document.querySelector('.btn2')
+let btn3=document.querySelector('.btn3')
+let img1=document.querySelector('.img1')
+let img2=document.querySelector('.img2')
+let img3=document.querySelector('.img3')
+let img4=document.querySelector('.img4')
 
-zagolovok.onclick=()=>{
-zagolovok.innerHTML='Buy me bro 😈😈'
-zagolovok.style.color='red'
+
+btn3.onclick=()=>{
+    img1.style.display='none'
+    img2.style.display='block'
+    img3.style.display='none'
+    btn3.classList.remove('active')
+    btn3.classList.add('active')
+    btn3.style.border='3px solid blue'
+    btn2.style.border='none'
+    btn.style.border='none'
 }
-btn_blue.onclick = () => {
-    white.style.display = 'block'
-    silver.style.display = 'none'
-    value.innerHTML = '$1,999'
-    btn_blue.style.border = '2px solid #04e2ff'
-    btn_grey.style.border = 'none'
-    btn_grey.style.background = '#CFE7FF'
-    btn_blue.style.background = 'blue'
-   
-    btn_blue.style.color = 'white'
-    h.innerHTML = 'White'
+btn2.onclick=()=>{
+    img1.style.display='none'
+    img3.style.display='block'
+    img2.style.display='none'
+    btn2.classList.remove('active')
+    btn2.classList.add('active')
+    btn2.style.border='3px solid blue'
+    btn.style.border='none'
+    btn3.style.border='none'
 }
-btn_grey.onclick = () => {
-    white.style.display = 'none'
-    silver.style.display = 'block'
-    btn_grey.style.border = '2px solid #04e2ff'
-    btn_blue.style.border = 'none'
-    h.innerHTML = 'Space grey'
-    btn_blue.style.background = '#CFE7FF'
-    btn_grey.style.background = 'blue'
-    btn_grey.style.color = 'white'
-    
+btn.onclick=()=>{
+    img3.style.display='none'
+    img1.style.display='block'
+    img2.style.display='none'
+   btn.style.border='3px solid blue'
+   btn2.style.border='none'
+   btn3.style.border='none'
 }
 
-one.onclick = () => {
-    one.style.border = '2px solid blue'
-    two.style.border = '1px solid grey'
-    three.style.border = '1px solid grey'
-    four.style.border = '1px solid grey'
-    value.innerHTML = '$1,999'
-}
+let btn_box=document.querySelector('.btn_box')
 
-two.onclick = () => {
-    two.style.border = '2px solid blue'
-    one.style.border = '1px solid grey'
-    three.style.border = '1px solid grey'
-    value.innerHTML = '$2,199'
-    four.style.border = '1px solid grey'
-}
-
-three.onclick = () => {
-    one.style.border = '1px solid grey'
-    two.style.border = '1px solid grey'
-    three.style.border = '2px solid blue'
-    four.style.border = '1px solid grey'
-    value.innerHTML = '$2,599'
-}
-four.onclick = () => {
-    one.style.border = '1px solid grey'
-    two.style.border = '1px solid grey'
-    three.style.border = '1px solid grey'
-    four.style.border = '2px solid blue'
-    value.innerHTML = '$3,199'
-}
