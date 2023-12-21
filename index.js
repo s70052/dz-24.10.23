@@ -1,110 +1,63 @@
-let str = document.querySelector('.str')
-let speed = 60
-let max_speed = 80
-let info_value = document.querySelector('.info_value')
-let cena = document.querySelector('.cena')
-let val = 750
-str.onclick = () => {
-    if (speed < max_speed) {
-        speed += 5
-        val -= 10
-        info_value.innerHTML = speed + ' ' + 'км/ч'
-        cena.innerHTML = val + 'км'
-    }
-
-}
-let speed2 = 20
-let str2 = document.querySelector('.str2')
-str2.onclick = () => {
-    if (speed > speed2) {
-        speed -= 5
-        val += 10
-        info_value.innerHTML = speed + ' ' + 'км/ч'
-        cena.innerHTML = val + 'км'
-    }
-}
-let str3 = document.querySelector('.str3')
+let inp = document.querySelectorAll('.inp')
+let btn = document.querySelector('button')
+let p = document.querySelectorAll('.p')
+let niz = document.querySelectorAll('.niz')
+let svg = document.querySelectorAll('.svg')
 let value = 0
-let info_value3 = document.querySelector('.info_value3')
-let pp = document.querySelector('.pp')
-str3.onclick = () => {
-    if (value >= 0 && value < 20) {
-        value++
-        info_value3.innerHTML = value + '°'
+
+let error = document.querySelector('.error')
+let success = document.querySelector('.success')
+let form = document.forms.login
+let error_count = 0
+btn.onclick = (event) => {
+    event.preventDefault()
+
+    inp.forEach((input, idx) => {
+
+        if (input.value === "") {
+            input.style.border = '3px solid red'
+            btn.style.background = 'red'
+            value++
+            error.innerHTML = "Error: " + value + '/12'
+        } else {
+            input.style.border = '3px solid #4200FF'
+            value++
+            success.innerHTML = 'Success:' + value + '/12'
+        }
+        if (inp[idx].value === "") {
+            p[idx].style.color = 'red'
+            niz[idx].innerHTML = 'Please enter your email adress'
+            niz[idx].style.color = 'red'
+            svg[idx].style.display = 'block'
+        } else {
+            p[idx].style.color = '#4200FF'
+            niz[idx].innerHTML = 'Need to fill'
+            niz[idx].style.color = 'gray'
+            svg[idx].style.display = 'none'
+        }
     }
-    if (value > 15) {
-        pp.innerHTML = 'кондиционер'
+    )
+    if (!error_count > 0) {
+       alert('Error')
     } else {
-        pp.innerHTML = 'печка'
-    }
-
-
-}
-let str4 = document.querySelector('.str4')
-str4.onclick = () => {
-    if (value > 0) {
-        value--
-        info_value3.innerHTML = value + '°'
-    }
-    if (value <= 15) {
-        pp.innerHTML = 'печка'
-
-    } else {
-        pp.innerHTML = 'кондиционер'
-    }
-}
-let info_value4 = document.querySelector('.info_value4')
-let str5 = document.querySelector('.str5')
-let str6 = document.querySelector('.str6')
-let swi = document.querySelector('.swi')
-let ballon = document.querySelector('.ballon')
-let ballon2 = document.querySelector('.ballon2')
-let ballon4 = document.querySelector('.ballon4')
-let ballon3 = document.querySelector('.ballon3')
-
-let d = 19
-let g = 21
-let f = 19
-str5.onclick = () => {
-
-    if (g > d) {
-        g = 21
-        info_value4.innerHTML = g
-    } else {
-        d = 19
-        info_value4.innerHTML = d
-    }
-    if (d === 19) {
-        ballon3.style.display = 'block'
-        ballon4.style.display = 'block'
-        ballon.style.display = 'none'
-        ballon2.style.display = 'none'
+        submit()
     }
 
 }
 
-str6.onclick = () => {
-    if (f < g) {
-        d = 19
-        info_value4.innerHTML = d
+function submit() {
+    let user = {}
 
-    } else {
-        g = 21
-        info_value4.innerHTML = g
-    }
-    if (g === 21) {
-        ballon3.style.display = 'none'
-        ballon4.style.display = 'none'
-        ballon.style.display = 'block'
-        ballon2.style.display = 'block'
-    }
+    let fm = new FormData(form)
 
+    fm.forEach((value, key) => {
+        user[key] = value
+    })
+
+
+    console.log(user);
 }
-let num = 750;
 
-swi.onclick = () => {
-    if (num >740) {
-       num-=20
-       cena.innerHTML=num +'км'
-    }  
-}
+
+
+

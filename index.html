@@ -4,96 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:ital,wght@1,500&family=Nunito+Sans:opsz,wght@6..12,300&family=Raleway:wght@100;400&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
 
 <body>
-    <section>
-        <div class="promo">
-            <div class="wrap">
-                <img src="./img/photo_2023-12-16_18-10-03.jpg" alt="">
-                <div class="ballon_box">
-                    <img class="ballon" src="./img/photo_2023-12-16_18-10-13-removebg-preview.png" alt="">
-                </div>
-                <div class="ballon2_box">
-                    <img class="ballon2" src="./img/photo_2023-12-16_18-10-13-removebg-preview.png" alt="">
-                </div>
-                <div class="ballon4_box">
-                    <img class="ballon4" src="./img/photo_2023-12-16_18-10-12-removebg-preview (1).png" alt="">
-                </div>
-                <div class="ballon3_box">
-                    <img class="ballon3" src="./img/photo_2023-12-16_18-10-12-removebg-preview (1).png" alt="">
-                </div>
-
-            </div>
+    <div class="wrap">
+        <h1>Example form</h1>
+        <div class="infa">
+            <p>All: 15</p>
+            <p>Need: 12</p>
+            <p class="success" >Success: 0/12</p>
+            <p class="error">Error: 0/12</p>
         </div>
-    </section>
-    <section class="strelka">
-        <div class="wrap">
-            <div class="box">
-                <p class="zapas">Запас хода</p>
-                <p class="zapas">Цена</p>
-            </div>
-            <div class="cena_box">
-                <h1 class="cena">750км</h1>
-                <h1 class="cen">$89, 990</h1>
-            </div>
-            <div class="info">
-                <p class="p">Скорость автомобиля</p>
-                <p class="p">Температура за окнами</p>
-                <p class="p">Диски</p>
-                <p class="pp">Кондиционер</p>
-                <p class="p">Версия Long Range</p>
-                <p class="p">Вид автомобиля</p>
-            </div>
-            <div class="info2">
-                <p class="info_value">60 км/ч</p>
-                <div class="img">
-                    <img class="str" src="./img/image 3.png" alt=""> <br>
-                    <img class="str2" src="./img/image 4.png" alt="">
+        <form name="login">
+            <div class="glav">
+                <div class="box">
+
+                    <p class="p">Name</p>
+                    <div class="img">
+                    <input class="inp" type="text" name="name">
+                   
+                        <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="icon / error warning">
+                            <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                            </g>
+                            </svg>
                 </div>
-                <p class="info_value3">0°</p>
-                <div class="img1">
-                    <img class="str3" src="./img/image 3.png" alt=""> <br>
-                    <img class="str4" src="./img/image 4.png" alt="">
-                </div>
-                <p class="info_value4">19</p>
-                <div class="img">
-                    <img class="str5" src="./img/image 3.png" alt=""> <br>
-                    <img class="str6" src="./img/image 4.png" alt="">
-                </div>
-                <div class="swi">
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="switch">
-                        <label for="switch"></label>
+                    <p class="niz">Need to fill</p>
+                
+                    <div class="bix">
+                        <p class="neob">Surname</p>
+                        <input class="inpt" type="text" name="surname">
                     </div>
-                </div>
-                <div class="swit">
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="switch1" class="toggle-switch-input">
-                        <label for="switch1" class="toggle-switch-label"></label>
+                    <div class="bix">
+                        <p class="p" >Email address</p>
+                        <div class="img">
+                            <input class="inp" type="text" name="Email address">
+                           
+                                <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="icon / error warning">
+                                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                                    </g>
+                                    </svg>
+                        </div>
+                        <p class="niz">Need to fill</p>
+                    </div>
+                    <div class="bix">
+                        <p class="neob">Phone number</p>
+                        <input class="inpt" type="text" name="Phone number">
+                    </div>
+                    <div class="bix">
+                        <p class="neob">Your Mom's name</p>
+                        <input class="inpt" type="text" name="Your Mom's name">
+                    </div>
+                    <div class="bix">
+                        <p class="neob">Your Pap's name</p>
+                        <input class="inpt" type="text" name="Your Pap's name">
                     </div>
 
                 </div>
-
-                <div class="sw">
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="switch2" class="toggle-switch-input">
-                        <a href="./knopka.html" for="switch2" class="toggle-switch-label">
-
-                        </a>
+                <div class="box2">
+                    <p class="p">Age</p>
+                    <div class="img">
+                        <input class="inp" type="text" name="age">
+                       
+                            <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icon / error warning">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                                </g>
+                                </svg>
                     </div>
+                    <p class="niz">Need to fill</p>
+                    <br>
+                    <p class="p">About you</p>
+                    <div class="img">
+                        <input class="inp" type="text" name="About you">
+                       
+                            <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icon / error warning">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                                </g>
+                                </svg>
+                    </div>
+                    <p class="niz">Need to fill</p>
+                    <br>
+                    <p class="p">What is JavaScript?</p>
+                    <div class="img">
+                        <input class="inp" type="text" name="What is JavaScript?">
+                       
+                            <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icon / error warning">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                                </g>
+                                </svg>
+                    </div> 
+                    <p class="niz">Need to fill</p>
+                    <br>
+                    <p class="p">What is HTML?</p>
+                    <div class="img">
+                        <input class="inp" type="text" name="What is HTML?">
+                       
+                            <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icon / error warning">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                                </g>
+                                </svg>
+                    </div>
+                    <p class="niz">Need to fill</p>
+                    <br>
+                    <p class="p">What is CSS?</p>
+                    <div class="img">
+                        <input class="inp" type="text" name="What is CSS?">
+                       
+                            <svg class="svg" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icon / error warning">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM6.83881 4.04547H9.16089L8.94854 10.6055H7.05116L6.83881 4.04547ZM9.20244 12.4336C9.19321 13.0984 8.63461 13.6339 8.00216 13.6339C7.33738 13.6339 6.79264 13.0984 6.80187 12.4336C6.79264 11.7781 7.33738 11.2472 8.00216 11.2472C8.63461 11.2472 9.19321 11.7781 9.20244 12.4336Z" fill="#EE0004"/>
+                                </g>
+                                </svg>
+                    </div>
+                    <p class="niz">Need to fill</p>
+                    <br>
+                    <p class="neob">Your favorite car</p>
+                    <input class="inpt" type="text" name="Your favorite car">
+
+                    <br>
+
                 </div>
-
-
+               
             </div>
-
-        </div>
-        </div>
-    </section>
+            <br>
+            <div class="btn">
+                <button type="button">Save changes</button>
+            </div>
+        </form>
+    </div>
 
     <script src="./index.js"></script>
+
+
 </body>
 
 </html>
