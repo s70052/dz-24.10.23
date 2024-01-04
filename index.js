@@ -3,15 +3,16 @@ let btn = document.querySelector('button')
 let p = document.querySelectorAll('.p')
 let niz = document.querySelectorAll('.niz')
 let svg = document.querySelectorAll('.svg')
-let value = 0
+
 
 let error = document.querySelector('.error')
 let success = document.querySelector('.success')
 let form = document.forms.login
-let error_count = 0
+
 btn.onclick = (event) => {
     event.preventDefault()
-
+    let value = 0
+    let val = 0
     inp.forEach((input, idx) => {
 
         if (input.value === "") {
@@ -21,8 +22,8 @@ btn.onclick = (event) => {
             error.innerHTML = "Error: " + value + '/12'
         } else {
             input.style.border = '3px solid #4200FF'
-            value++
-            success.innerHTML = 'Success:' + value + '/12'
+            val++
+            success.innerHTML = 'Success:' + val + '/12'
         }
         if (inp[idx].value === "") {
             p[idx].style.color = 'red'
@@ -37,10 +38,10 @@ btn.onclick = (event) => {
         }
     }
     )
-    if (!error_count > 0) {
-       alert('Error')
-    } else {
+    if (!value > 0) {
         submit()
+    } else {
+        alert('Error')
     }
 
 }
