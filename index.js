@@ -46,3 +46,17 @@ span_cl.append(span_btn,svg2)
 cl2.append(img1,svg)
 sd.append(h5,p,button)
 cl3.append(button3,kks)
+
+let i =document.querySelector('.i')
+let i_i =document.querySelector('.i_i')
+let ssc =document.querySelector('.ssc')
+let sscc =document.querySelector('.sscc')
+ssc.onclick =()=>{
+    i_i.style.display='none'
+    i.style.display='block'
+}
+
+sscc.onclick =()=>{
+    i_i.style.display='block'
+    i.style.display='none'
+}

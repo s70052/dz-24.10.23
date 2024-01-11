@@ -283,6 +283,31 @@ h4 {
     display: flex;
     justify-content: space-between;
 }
+.i_i{
+    display: none;
+}
+.ssc{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 240px;
+    border-radius: 100%;
+    border: 0;
+    left: 10px;
+}
+.ddc{
+    width: 50%;
+    align-items: center;
+}
+.sscc{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 240px;
+    left: 760px;
+    border-radius: 100%;
+    border: 0;
+}
 
 .glav_border {
     height: 360px;
