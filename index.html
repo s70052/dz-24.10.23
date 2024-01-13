@@ -1,347 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Raleway&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
+    <title>Food</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <div class="wrap">
-
-            <div class="box">
-
-                <nav>
-                    <div class="p1">
-                        <p>O% Рассрочка</p>
-                    </div>
-                    <div class="p2">
-                        <p>Скидки</p>
-                    </div>
-                    <div class="p3">
-                        <p>Розыгрыши</p>
-                        <div class="p33">
-                            <p class="p4">Карта сайта</p>
-                        </div>
-                    </div>
-                    <div class="d">
-                        <div class="pp">
-                            <p>Продавайте на olcha</p>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <h3 class="h3">Узб</h3>
-                        <h3 class="h3">O'z</h3>
-                        <h4 class="h4">Рус</h4>
-                        <div class="vertical-line"></div>
-                    </div>
-                </nav>
-                <a class="p5" href="#"> +998 (77) 202 202 1 </a>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo.svg" alt="Логотип">
             </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Доставка питания</a>
+                <a href="#" class="header__link">Второй пункт</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <button data-modal class="btn btn_white">Связаться с нами</button>
         </div>
     </header>
+    <div class="sidepanel">
+        <div class="sidepanel__text"><span>Социальные сети</span></div>
+        <div class="sidepanel__divider"></div>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/facebook.svg" alt="facebook">
+        </a>
+    </div>
 
-
-    <section>
-        <div class="wrap">
-            <div class="left">
-
-                <img src="https://olcha.uz/_nuxt/logo-red.46354f18.png" alt="">
-    
-                <div class="katalog">
-                    <div class="tires">
-                        <div class="dash"></div>
-                        <div class="dash"></div>
-                        <div class="dash"></div>
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent1">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!
                     </div>
-                    <h4 class="katalog_h4">Каталог</h4>
                 </div>
-                <div class="inp">
-                    <input class="input" type="id" placeholder="Поиск по каталогу">
-                    <button class="btn" type="submit">
-                        <div class="mm">
-                            <img class="im" src="https://olcha.uz/_nuxt/search.2a234c15.svg" alt="search">
-                        </div>
-                    </button>
+                <div class="tabcontent2">
+                    <img src="img/tabs/elite.jpg" alt="elite">
+                    <div class="tabcontent__descr">
+                        Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!                                     
+                    </div>
                 </div>
+                <div class="tabcontent3">
+                    <img src="img/tabs/post.jpg" alt="post">
+                    <div class="tabcontent__descr">
+                        Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!                                     
+                    </div>
+                </div>
+                <div class="tabcontent4">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
+                    </div>
+                </div>
+                <div class="tabheader">
+                    <h3>Выберите стиль питания</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item1">Фитнес</div>
+                        <div class="tabheader__item2">Премиум</div>
+                        <div class="tabheader__item3">Постное</div>
+                        <div class="tabheader__item4">Сбалансированное</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Живи полной жизнью!</div>
+        </div>
+    </div>
 
-                <div class="pal">
-                    <svg data-v-0507f46a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        class="icon icon__comparison">
-                        <rect data-v-0507f46a="" x="3.25" y="15" width="2.5" height="7" rx="1.25"></rect>
-                        <rect data-v-0507f46a="" x="8.25" y="3" width="2.5" height="19" rx="1.25"></rect>
-                        <rect data-v-0507f46a="" x="13.25" y="11" width="2.5" height="11" rx="1.25"></rect>
-                        <rect data-v-0507f46a="" x="18.25" y="7" width="2.5" height="15" rx="1.25"></rect>
-                    </svg>
-                    <h4>Сравнение</h4>
-                </div>
-                <div class="pal2">
-                    <svg data-v-0507f46a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        class="icon icon__favorites">
-                        <path data-v-0507f46a=""
-                            d="M21.2913 4.61183C20.7805 4.10083 20.1741 3.69547 19.5066 3.41891C18.8392 3.14235 18.1238 3 17.4013 3C16.6788 3 15.9634 3.14235 15.2959 3.41891C14.6285 3.69547 14.022 4.10083 13.5113 4.61183L12.4513 5.67183L11.3913 4.61183C10.3596 3.58013 8.96032 3.00053 7.50129 3.00053C6.04226 3.00053 4.64298 3.58013 3.61129 4.61183C2.5796 5.64352 2 7.04279 2 8.50183C2 9.96086 2.5796 11.3601 3.61129 12.3918L4.67129 13.4518L12.4513 21.2318L20.2313 13.4518L21.2913 12.3918C21.8023 11.8811 22.2076 11.2746 22.4842 10.6072C22.7608 9.93972 22.9031 9.22431 22.9031 8.50183C22.9031 7.77934 22.7608 7.06393 22.4842 6.39647C22.2076 5.72901 21.8023 5.12258 21.2913 4.61183V4.61183Z"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    <h4>Избранные</h4>
-                </div>
-                <div class="pal3">
-                    <svg data-v-0507f46a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                        class="icon icon__cart">
-                        <path data-v-0507f46a=""
-                            d="M5.625 18.75C6.48795 18.75 7.1875 18.0504 7.1875 17.1875C7.1875 16.3246 6.48795 15.625 5.625 15.625C4.76206 15.625 4.0625 16.3246 4.0625 17.1875C4.0625 18.0504 4.76206 18.75 5.625 18.75Z">
-                        </path>
-                        <path data-v-0507f46a=""
-                            d="M15 18.75C15.8629 18.75 16.5625 18.0504 16.5625 17.1875C16.5625 16.3246 15.8629 15.625 15 15.625C14.1371 15.625 13.4375 16.3246 13.4375 17.1875C13.4375 18.0504 14.1371 18.75 15 18.75Z">
-                        </path>
-                        <path data-v-0507f46a=""
-                            d="M3.125 5H16.7512C16.8427 5 16.9332 5.02011 17.0161 5.0589C17.099 5.0977 17.1724 5.15423 17.231 5.22451C17.2897 5.29479 17.3322 5.37709 17.3555 5.4656C17.3789 5.55412 17.3825 5.64668 17.3661 5.73674L16.0601 12.9242C16.0339 13.0683 15.958 13.1985 15.8456 13.2923C15.7332 13.3861 15.5915 13.4375 15.4451 13.4375H5.18665C5.04034 13.4375 4.89866 13.3862 4.78631 13.2924C4.67395 13.1987 4.59804 13.0686 4.57179 12.9246L2.65034 2.38788C2.6241 2.24394 2.54818 2.11377 2.43583 2.02005C2.32347 1.92633 2.1818 1.875 2.03548 1.875H0.9375"
-                            stroke="currentColor" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                    </svg>
-                    <h4>Корзина</h4>
-                </div>
-                <div class="pal4">
-                    <svg data-v-0507f46a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        class="icon icon__user">
-                        <path data-v-0507f46a="" d="M15.71 12.71C16.6904 11.9387 17.406 10.8809 17.7572 9.68394C18.1085 8.48697 18.0779 7.21027 17.6698
-                        6.03147C17.2617 4.85267 16.4963 3.83039 15.4801 3.10686C14.4639 2.38332 13.2474 1.99451 12 1.99451C10.7525
-                        1.99451 9.53611 2.38332 8.51993 3.10686C7.50374 3.83039 6.73834 4.85267 6.33021 6.03147C5.92208 7.21027
-                        5.89151 8.48697 6.24276 9.68394C6.59401 10.8809 7.3096 11.9387 8.29 12.71C6.61007 13.383 5.14428 14.4994
-                        4.04889 15.9399C2.95349 17.3805 2.26956 19.0913 2.07 20.89C2.05555 21.0213 2.06711 21.1542 2.10402 21.2811C2.14093
-                        21.4079 2.20246 21.5263 2.28511 21.6293C2.45202 21.8375 2.69478 21.9708 2.96 22C3.22521 22.0292 3.49116 21.9518
-                        3.69932 21.7849C3.90749 21.618 4.04082 21.3752 4.07 21.11C4.28958 19.1552 5.22168 17.3498 6.68822 16.0388C8.15475
-                        14.7278 10.0529 14.003 12.02 14.003C13.9871 14.003 15.8852 14.7278 17.3518 16.0388C18.8183 17.3498 19.7504
-                        19.1552 19.97 21.11C19.9972 21.3557 20.1144 21.5827 20.2991 21.747C20.4838 21.9114 20.7228 22.0015 20.97
-                        22H21.08C21.3421 21.9698 21.5817 21.8373 21.7466 21.6313C21.9114 21.4252 21.9881 21.1624 21.96 20.9C21.7595
-                        19.0962 21.0719 17.381 19.9708 15.9382C18.8698 14.4954 17.3969 13.3795 15.71 12.71ZM12 12C11.2089 12 10.4355
-                        11.7654 9.77772 11.3259C9.11992 10.8864 8.60723 10.2616 8.30448 9.53074C8.00173 8.79983 7.92251 7.99557 8.07686
-                        7.21964C8.2312 6.44372 8.61216 5.73099 9.17157 5.17158C9.73098 4.61217 10.4437 4.2312 11.2196 4.07686C11.9956
-                        3.92252 12.7998 4.00173 13.5307 4.30448C14.2616 4.60724 14.8863 5.11993 15.3259 5.77772C15.7654 6.43552 16
-                        7.20888 16 8C16 9.06087 15.5786 10.0783 14.8284 10.8284C14.0783 11.5786 13.0609 12 12 12Z">
-                        </path>
-                    </svg>
-                    <h4 class="h5">Войти</h4>
-                </div>
+    <div class="divider"></div>
 
+    <div class="offer">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="offer__text">
+                <h2 class="title">Что мы можем вам предложить?</h2>
+                <div class="offer__descr">
+                    Наша основная идея - это правильное питание. Оно может быть простым и вкусным. Мы не просто доставка, мы сервис! Мы взяли на себя все расчеты БЖУ, калорийности, объемов порций и прочие важные, но скучные аспекты. Вам остается только полезная, сытная и правильная еда, которую мы привозим прямо под дверь.
+                </div>
+            </div>
+            <div class="offer__action">
+                <button data-modal class="btn btn_dark">Связаться с нами</button>
             </div>
         </div>
-    </section>
-    <section>
-
-        <div class="wrap">
-            <button class="ssc"> 
-                <img class="ddc" src="./2849832_arrows_navigation_arrow_left_back_icon (1).png" alt="">
-             </button>
-            <button class="sscc">
-                <img class="ddc" src="./211607_right_arrow_icon.png" alt=""> </button>
-            <div class="glav_sec">
-                
-                <div class="glav1">
-                   
-                    <img class="i_i" src="https://olcha.uz/image/original/sliders/ru/JwFP8H3qk55szQrT7xiLJzB71g6gAChEtieJYv4aFEJ3udzLC1mAKRFFInww.png"
-                    alt="Книги">
-                    <img class="i"
-                        src="https://olcha.uz/image/original/sliders/ru/WiV3LrIWmVqzl5Fsfdmi6U7qrJPIxbGFJypofB0chYzMFijEFAO24BQfsOcm.jpg">
+        <div class="container">
+            <div class="offer__advantages">
+                <h2>Быстро и полезно</h2>
+                <div class="offer__advantages-text">
+                    Готовка дома занимает много сил, времени и нервов. Мы привозим еду сразу на целый день, и ты можешь действовать так, как тебе удобно, не подстраиваясь ни под кого и будучи уверенным в качестве продукта!
                 </div>
-                <div class="glav2">
-                    <div class="glav_border">
-                        <p class="tovar">Товар дня</p>
-
-                        <div class="s">
-                            <button>09</button>
-                            <p>:</p>
-                            <button>26</button>
-                            <p>:</p>
-                            <button>54</button>
-                        </div>
-
-                    </div>
-                    <div class="camera">
-                        <img data-v-1652a094=""
-                            src="https://olcha.uz/image/220x220/products/2023-01-04/ip-kamera-xiaomi-mi-smart-camera-c200-mjsxj14cm-186467-0.jpg"
-                            width="180" height="180" alt="IP-камера Xiaomi Mi Smart Camera C200 (MJSXJ14CM)"
-                            title="IP-камера Xiaomi Mi Smart Camera C200 (MJSXJ14CM)">
-                    </div>
-                    <div class="ll_box">
-                        <p class="ll">IP-камера Xiaomi Mi Smart Camera </p>
-                        <p class="lll">C200 (MJSXJ11CM)</p>
-
-                    </div>
-                    <h2>460 000 сум</h2>
-                    <button class="button">60 000 сум x 12 мес</button>
+                <h2>Правильный рацион</h2>
+                <div class="offer__advantages-text">
+                    Мы разработали специальное меню, где учтены все нюансы правильного питания, от баланса БЖУ до их приготовления и дробления рациона.
                 </div>
-
             </div>
-            <div class="gallery">
-                <div class="llls">
-                    <img class="gallery-item"
-                        src="https://olcha.uz/image/128x128/category/8NL2Zg7y6zcsvHWY3UC6t10WcEt0XtXrCCemBSNYrkgewgCDpJFSnmKyQwxh.png"
-                        alt="">
-                    <p>Телевизоры,<br> фото-видео и <br> аудио</p>
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev">
+                        <img src="icons/left.svg" alt="prev">
+                    </div>
+                    <span id="current">03</span>
+                    /
+                    <span id="total">04</span>
+                    <div class="offer__slider-next">
+                        <img src="icons/right.svg" alt="next">
+                    </div>
                 </div>
-
-
-                <div class="llls">
-                    <img class="gallery-item"
-                        src="https://olcha.uz/image/128x128/category/8IZMawp7M8vCHzuKYNdzzFE8BTBsAkGFtvLj57dnbbhWQw7ndZ3wzjr76tfD.png"
-                        alt="">
-                    <p>Ноутбуки, <br> принтеры, <br> компьютеры</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item"
-                        src="https://olcha.uz/image/128x128/category/eaKvQGBmhuvJCaUb2lBZcrwSyR34priEGLwTTzTZi5AphNAeDTRRGAJ92euM.png"
-                        alt="">
-                    <p>Смартфоны, <br> телефоны, <br> гаджеты,</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item"
-                        src="https://olcha.uz/image/128x128/category/Aec43gUgTGUETSdyybQD1hqFCNARNzI1NZ3WBCNNK2Ue6X8uMTUyerg8AqkJ.png"
-                        alt="">
-                    <p>Бытовая техника</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item"
-                        src="https://olcha.uz/image/128x128/category/R9rII6eXvwazS1B2tdAGKlaePWeVE6rpTyQhEC4EshWGxVppXDb8R1j8vUbY.png"
-                        alt="">
-                    <p>Все для кухни</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/6bI7D3rnTe5Bpjodx4u1J8QxzazkluiZoaLYfkVNGaEkiftKKim7ACXISbeb.png"
-                        alt="">
-                    <p>Спорт товары</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item"
-                        src="https://olcha.uz/image/128x128/category/onGn2evoJ4nsqU726j3FMvGarW7yHEpkIITajHYNI1PQz1HqcDVWX6qI8zMZ.png"
-                        alt="">
-                    <p>Красота и <br> здоровье</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/U00InUCCxWNigqjvCCbyCffjjlxn6jM0NTmeMtYad0Fn8TLYvZwElzgO8vnz.png"
-                        alt="Товары из за рубежа" width="128" height="128" title="Товары из за рубежа">
-                    <p>Товары из <br> за рубежа</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/YM8GF84TotnvtPKmIH8ZZhd30hp1fU03EXTIsJyLexiR2FPyudZ0ytVjeBGA.png"
-                        alt="Автотовары" width="128" height="128" title="Автотовары">
-                    <p>Автотовары</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/Kpf35APJOLnhxAGvGyZxKEwW49xIaDGVhNsgTZKMQSeYzLBsFatjxgglYEbx.png"
-                        alt="Для геймеров" width="128" height="128" title="Для геймеров">
-                    <p>Для геймеров</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/AEmbXKLIBGI0arkGlASeSXrnECZnWIcOpZSHe3ZOeYQODo39YWgvqRl9iCUf.png"
-                        alt="Все для офиса, дома и сада" width="128" height="128" title="Все для офиса, дома и сада">
-                    <p>Все для офиса, <br> дома и сада</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/UG6Y659fQ1eM4dFEdvHuO0yl09sgx3LOumBdwQrxQimL2Zut83I2J1OTyYeg.png"
-                        alt="Игрушки и товары для детей" width="128" height="128" title="Игрушки и товары для детей">
-                    <p>Игрушки и товары <br> для детей</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/tXASBxYVVccD9YTz0y3vMTzxl2qNsOglhyJ4yGBDVaZR5ClcgI5D6DAfxvK9.png"
-                        alt="Одежда и обувь" width="128" height="128" title="Одежда и обувь">
-                    <p>Одежда и <br> обувь</p>
-                </div>
-
-                <div class="llls">
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/qOCeNi9kwsAcPAdMLf7dlwK3pvQktsR9fxmzRMRVk6pr59nYHTLfgSgtwGEb.png"
-                        alt="Книги" width="128" height="128" title="Книги">
-                    <p>Книги</p>
-                </div>
-
-                <div class="llls">
-
-                    <img class="gallery-item" loading="lazy"
-                        src="https://olcha.uz/image/128x128/category/SvpHFRWhXEEKqCjAQEahIrIt50qUdYOBjvkF2vCRmN1fWDRs1bckpMHM6hHt.png"
-                        alt="Мебель" width="128" height="128" title="Мебель">
-                    <p>Мебель</p>
-                </div>
-
-            </div>
-            <div class="proect">
-                <img data-v-cdd6c484="" loading="lazy"
-                    src="https://olcha.uz/image/460x152/homePage/SDiqsxQw1bP5urZpU0fgxvxUDI8CJaALVBPy2zKt6zpevEX6O3eyoEslsack.png"
-                    alt="">
-                <img data-v-cdd6c484="" loading="lazy"
-                    src="https://olcha.uz/image/460x152/homePage/c3FpSJDUVy86hIyeKBz39JGvB3EFEfUm0NQMbklFgiJ2trWryaqAi1za2xso.png"
-                    alt="">
-                <img data-v-cdd6c484="" loading="lazy"
-                    src="https://olcha.uz/image/460x152/homePage/G9KfXfuKbX7Y91RRcuhXdD0saHGugUKvX6FLRFXxD6uFwLkPf0qytruyYYBQ.png"
-                    alt="">
-            </div>
-            <div class="gl_box">
-                <div class="span_cl">
-                    <button class="span_btn"> 0 | 0 | 6</button>
-                    <img src="./img/Аннотация 2024-01-11 150637.png" alt="">
-                </div>
-                <div class="cl2">
-                    <img data-v-1652a094=""
-                        src="https://olcha.uz/image/220x220/products/supplier/stores/1/2023-11-27/N7Ty85z4Hti1mRvCdDHP9x2XFOedatIxL8RRrTWWGd3Af3YFkzzrsDtaYMvr.jpg"
-                        width="220" height="220" alt="Honor X7b 8/128 GB" title="Honor X7b 8/128 GB">
-                    <img class="kl" src="./img/Аннотация 2024-01-11 151323.png" alt="">
-
-                </div>
-                <div class="sd">
-                    <h5>Honor X7b 8/128 GB</h5>
-                    <p>2 220 000 сум</p>
-                    <button>425 000 сум x 6 мес</button>
-
-                </div>
-                <div class="cl3">
-
-                    <button class="svf_bt">
-                        <svg data-v-1652a094="" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon__cart">
-                            <path data-v-1652a094=""
-                                d="M5.625 18.75C6.48795 18.75 7.1875 18.0504 7.1875 17.1875C7.1875 16.3246 6.48795 15.625 5.625 15.625C4.76206 15.625 4.0625 16.3246 4.0625 17.1875C4.0625 18.0504 4.76206 18.75 5.625 18.75Z">
-                            </path>
-                            <path data-v-1652a094=""
-                                d="M15 18.75C15.8629 18.75 16.5625 18.0504 16.5625 17.1875C16.5625 16.3246 15.8629 15.625 15 15.625C14.1371 15.625 13.4375 16.3246 13.4375 17.1875C13.4375 18.0504 14.1371 18.75 15 18.75Z">
-                            </path>
-                            <path data-v-1652a094=""
-                                d="M3.125 5H16.7512C16.8427 5 16.9332 5.02011 17.0161 5.0589C17.099 5.0977 17.1724 5.15423 17.231 5.22451C17.2897 5.29479 17.3322 5.37709 17.3555 5.4656C17.3789 5.55412 17.3825 5.64668 17.3661 5.73674L16.0601 12.9242C16.0339 13.0683 15.958 13.1985 15.8456 13.2923C15.7332 13.3861 15.5915 13.4375 15.4451 13.4375H5.18665C5.04034 13.4375 4.89866 13.3862 4.78631 13.2924C4.67395 13.1987 4.59804 13.0686 4.57179 12.9246L2.65034 2.38788C2.6241 2.24394 2.54818 2.11377 2.43583 2.02005C2.32347 1.92633 2.1818 1.875 2.03548 1.875H0.9375"
-                                stroke="currentColor" stroke-width="1.875" stroke-linecap="round"
-                                stroke-linejoin="round"></path>
-                        </svg>
-                    </button>
-                    <button class="kks">В Рассрочку</button>
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slide">
+                        <img src="img/slider/pepper.jpg" alt="pepper">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/food-12.jpg" alt="food">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/olive-oil.jpg" alt="oil">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/paprika.jpg" alt="paprika">
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <div class="divider"></div>
 
+    <div class="calculating">
+        <div class="container">
+            <h2 class="title">Рассчитаем вашу потребность в калориях?
+            </h2>
+            <div class="calculating__field">
+                <div class="calculating__subtitle">
+                    Ваш пол
+                </div>
+                <div class="calculating__choose" id="gender">
+                    <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                    <div class="calculating__choose-item">Мужчина</div>
+                </div>
+
+                <div class="calculating__subtitle">
+                    Ваша конституция
+                </div>
+                <div class="calculating__choose calculating__choose_medium">
+                    <input type="text" id="height" placeholder="Введите рост" class="calculating__choose-item">
+                    <input type="text" id="weight" placeholder="Введите вес"  class="calculating__choose-item">
+                    <input type="text" id="age" placeholder="Введите возраст" class="calculating__choose-item">
+                </div>
+
+                <div class="calculating__subtitle">
+                    Выберите вашу физическая активность
+                </div>
+                <div class="calculating__choose calculating__choose_big">
+                    <div id="low" class="calculating__choose-item">Низкая активность </div>
+                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
+                    <div id="medium" class="calculating__choose-item">Умеренная активность</div>
+                    <div id="high" class="calculating__choose-item">Высокая активность</div>
+                </div>
+
+                <div class="calculating__divider"></div>
+
+                <div class="calculating__total">
+                    <div class="calculating__subtitle">
+                        Ваша суточная норма калорий:
+                    </div>
+                    <div class="calculating__result">
+                        <span>2700</span> ккал
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu">
+        <h2 class="title">Наше меню на день</h2>
+
+        <div class="menu__field">
+            <div class="container">
+                <div class="menu__item">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <h3 class="menu__item-subtitle">Меню "Фитнес"</h3>
+                    <div class="menu__item-descr">Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>229</span> грн/день</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/tabs/elite.jpg" alt="elite">
+                    <h3 class="menu__item-subtitle">Меню “Премиум”</h3>
+                    <div class="menu__item-descr">В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>550</span> грн/день</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/tabs/post.jpg" alt="post">
+                    <h3 class="menu__item-subtitle">Меню "Постное"</h3>
+                    <div class="menu__item-descr">Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков. </div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>430</span> грн/день</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="container">
+            <div class="title">Заказывай пробный день прямо сейчас!</div>
+            <form action="#" class="order__form">
+                <input required placeholder="Ваше имя" name="name" type="text" class="order__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="order__input">
+                <img src="icons/right.svg" alt="right">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title">Акция для новых клиентов!</div>
+                <div class="promotion__descr">
+                    Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
+                    Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
+                    <br><br>
+                    Акция закончится 20 мая в 00:00
+                </div>
+            </div>
+            <div class="promotion__timer">
+                <div class="title">Осталось до конца акции:</div>
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        дней
+                    </div>
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        часов
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        минут
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        секунд
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">Мы в социальных сетях:</div>
+                <a href="#" class="link">instagram</a>
+                <a href="#" class="link">facebook</a>
+            </div>
+            <div class="pepper">
+                <img src="icons/veg.svg" alt="pepper">
+            </div>
+            <div class="call">
+                <div class="subtitle">Или позвоните нам</div>
+                <a href="#" class="link">+380678341034</a>
+                <a href="#" class="link">+380500941356</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
-<script src="./index.js"></script>
-
 </html>
