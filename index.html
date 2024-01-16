@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  
+    
     <header class="header">
+        <div class="confetti-container">
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+
+        </div>
         <div class="header__left-block">
             <div class="header__logo">
                 <img src="icons/logo.svg" alt="Логотип">
@@ -141,8 +149,8 @@
                     Ваш пол
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-                    <div class="calculating__choose-item">Мужчина</div>
+                    <div data-gender="woman" class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                    <div  data-gender="man"  class="calculating__choose-item">Мужчина</div>
                 </div>
 
                 <div class="calculating__subtitle">
@@ -171,7 +179,7 @@
                         Ваша суточная норма калорий:
                     </div>
                     <div class="calculating__result">
-                        <span>2700</span> ккал
+                        <span id="result">2700</span> ккал
                     </div>
                 </div>
             </div>
@@ -300,6 +308,8 @@
             </div>
         </div>
     </div>
+
+  
     <script src="./js/script.js"></script>
 </body>
 </html>

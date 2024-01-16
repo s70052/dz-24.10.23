@@ -31,6 +31,7 @@ function slideShow(n, d) {
 
     if (n === slides.length) {
         slideIndex = 0
+        r=0
     }
 
     if (n < 0) {
@@ -40,10 +41,10 @@ function slideShow(n, d) {
     if (d >= 0) {
         current.innerHTML = slideIndex
     }
-if(total.innerHTML.length-1){
-    total.innerHTML++
-}
-  
+    if (total.innerHTML.length - 1) {
+        total.innerHTML++
+    }
+
 
     slides.forEach(slide => slide.classList.add('hide', 'fade'))
     slides[slideIndex].classList.remove('hide')
@@ -59,12 +60,10 @@ prev_btn.onclick = () => {
     slideIndex--
 
     slideShow(slideIndex)
-    if(current.innerHTML>1&&current.innerHTML<5){
+    if (current.innerHTML > 1 && current.innerHTML < 5) {
         current.innerHTML--
-    } 
-    if(slideIndex===1){
-      return
     }
+  
 }
 
 let tabheader__item1 = document.querySelector('.tabheader__item1')
@@ -106,6 +105,91 @@ tabheader__item4.onclick = () => {
     tabcontent3.style.display = 'none'
     tabcontent2.style.display = 'none'
 }
+
+
+const user_data = {
+    gender: "woman"
+}
+
+const gender_btns = document.querySelectorAll('[data-gender]')
+const inputs = document.querySelectorAll('.calculating__choose_medium input')
+const actions = document.querySelectorAll('.calculating__choose_big div')
+const result_view = document.querySelector('#result')
+
+gender_btns.forEach(btn => {
+    btn.onclick = () => {
+        gender_btns.forEach(btn => btn.classList.remove('calculating__choose-item_active'))
+        btn.classList.add('calculating__choose-item_active')
+
+        const g = btn.dataset.gender
+        user_data["gender"] = g
+
+    }
+})
+
+inputs.forEach(inp => {
+    inp.onkeyup = () => {
+        user_data[inp.id] = inp.value
+    }
+})
+
+let prev = 1
+actions.forEach((div, idx) => {
+    div.onclick = () => {
+        actions[prev].classList.remove('calculating__choose-item_active')
+        div.classList.add('calculating__choose-item_active')
+        prev = idx
+        const cft = div.dataset.cft
+
+        if (user_data.gender === 'woman') {
+            const result = (655.1 + (9.563 * user_data['weight']) + (1.85 * user_data['height']) - (4.676 * user_data['age'])) * cft
+            result_view.innerHTML = Math.round(result)
+        } else {
+            const result = (66.5 + (13.75 * user_data['weight']) + (5.003 * user_data['height']) - (6.775 * user_data['age']))
+            result_view.innerHTML = Math.round(result)
+        }
+    }
+
+
+})
+
+
+
+
+
+
+
+let minutes = document.querySelector('#minutes')
+let seconds = document.querySelector('#seconds')
+let conf = document.querySelector('.confetti-container')
+minutes.innerHTML = '56'
+seconds.innerHTML = '20'
+
+
+
+
+
+setInterval(() => {
+    if (seconds.innerHTML > 0) {
+        seconds.innerHTML--
+    } else if (minutes.innerHTML > 0) {
+        minutes.innerHTML--
+        seconds.innerHTML = 59
+    } 
+}, 1000)
+
+
+setTimeout(() => {
+    if (seconds.innerHTML === 0) {
+        conf.style.display = 'block'
+    }
+}, 1000)
+
+
+
+
+
+
 
 
 
