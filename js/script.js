@@ -31,7 +31,7 @@ function slideShow(n, d) {
 
     if (n === slides.length) {
         slideIndex = 0
-        r=0
+        r = 0
     }
 
     if (n < 0) {
@@ -63,7 +63,7 @@ prev_btn.onclick = () => {
     if (current.innerHTML > 1 && current.innerHTML < 5) {
         current.innerHTML--
     }
-  
+
 }
 
 let tabheader__item1 = document.querySelector('.tabheader__item1')
@@ -167,7 +167,31 @@ seconds.innerHTML = '20'
 
 
 
+var confetti = document.querySelectorAll('.box > div');
+function createConfetti() {
+    var box = document.getElementById('box');
+    var colors = ['red', 'green'];
 
+    for (var i = 0; i < 1000; i++) {
+        var div = document.createElement('div');
+        box.appendChild(div);
+    }
+
+    var confetti = document.querySelectorAll('.box > div');
+
+    for (var i = 0; i < confetti.length; i++) {
+        var size = Math.random() * 0.01 * i;
+
+        confetti[i].style.width = 5 + size + 'px';
+        confetti[i].style.height = 16 + size + 'px';
+        confetti[i].style.left = Math.random() * innerWidth + 'px';
+
+        var background = colors[Math.floor(Math.random() * colors.length)];
+        confetti[i].style.backgroundColor = background;
+
+        box.children[i].style.transform = 'rotate(' + size * i + 'deg)';
+    }
+}
 
 setInterval(() => {
     if (seconds.innerHTML > 0) {
@@ -175,15 +199,16 @@ setInterval(() => {
     } else if (minutes.innerHTML > 0) {
         minutes.innerHTML--
         seconds.innerHTML = 59
-    } 
-}, 1000)
-
-
-setTimeout(() => {
-    if (seconds.innerHTML === 0) {
-        conf.style.display = 'block'
+    } else if (seconds.innerHTML === 0) {
+        createConfetti()
     }
 }, 1000)
+
+
+
+
+
+
 
 
 
