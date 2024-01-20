@@ -784,6 +784,9 @@ a {
     padding: 0 20px;
     outline: 0
 }
+html{
+    scroll-behavior: smooth;
+}
 .modal__input2 {
     display: block;
     margin: 20px auto 20px auto;
