@@ -192,20 +192,60 @@ function createConfetti() {
         box.children[i].style.transform = 'rotate(' + size * i + 'deg)';
     }
 }
-
+let hours=document.querySelector('#hours')
+let days=document.querySelector('#days')
 setInterval(() => {
     if (seconds.innerHTML > 0) {
         seconds.innerHTML--
     } else if (minutes.innerHTML > 0) {
         minutes.innerHTML--
         seconds.innerHTML = 59
+    }else if(hours.innerHTML>0){
+        hours.innerHTML--
+        minutes.innerHTML=59
+    }else if(days.innerHTML>0){
+        days.innerHTML--
+        hours.innerHTML=23
     } else if (seconds.innerHTML === 0) {
         createConfetti()
     }
 }, 1000)
 
 
+let form = document.forms.login
 
+let modal__input = document.querySelector('.modal__input')
+let modal__input2 = document.querySelector('.modal__input2')
+const patterns = {
+    number: /^9989[0123456789][0-9]{7}$/,
+    name: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u
+}
+
+
+
+modal__input.onkeyup = () => {
+    let reg = patterns[modal__input.name]
+
+
+    if (!reg.test(modal__input.value)) {
+        modal__input.classList.add('er')
+    } else {
+        modal__input.classList.remove('er')
+    }
+
+
+}
+
+
+modal__input2.onkeyup = () => {
+    let reg2 = patterns[modal__input2.name]
+
+    if (!reg2.test(modal__input2.value)) {
+        modal__input2.classList.add('err')
+    } else {
+        modal__input2.classList.remove('err')
+    }
+}
 
 
 

@@ -8,16 +8,16 @@
 </head>
 <body>
   
-   
+    <div id="box" class="box"></div>
     <header class="header">
-        <div id="box" class="box"></div>
+      
         <div class="header__left-block">
             <div class="header__logo">
                 <img src="icons/logo.svg" alt="Логотип">
             </div>
             <nav class="header__links">
-                <a href="#" class="header__link">Доставка питания</a>
-                <a href="#" class="header__link">Второй пункт</a>
+                <a href="#a" class="header__link">Доставка питания</a>
+                <a href="#calcul" class="header__link">Второй пункт</a>
             </nav>
         </div>
         <div class="header__right-block">
@@ -135,7 +135,7 @@
 
     <div class="divider"></div>
 
-    <div class="calculating">
+    <div id="calcul" class="calculating">
         <div class="container">
             <h2 class="title">Рассчитаем вашу потребность в калориях?
             </h2>
@@ -222,7 +222,7 @@
         </div>
     </div>
 
-    <div class="order">
+    <div id="a" class="order">
         <div class="container">
             <div class="title">Заказывай пробный день прямо сейчас!</div>
             <form action="#" class="order__form">
@@ -293,11 +293,11 @@
     <div class="modal">
         <div class="modal__dialog">
             <div class="modal__content">
-                <form action="#">
+                <form action="#" name="login">
                     <div data-close class="modal__close">&times;</div>
                     <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
-                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input2">
                     <button class="btn btn_dark btn_min">Перезвонить мне</button>
                 </form>
             </div>
