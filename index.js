@@ -17,7 +17,7 @@ submit.onclick = () => {
         
       let time=new Date()
       let cur=time.getHours()+':'+time.getMinutes()+':'+time.getSeconds()
-    
+    p.style.fontFamily='Italianno'
         mini_box.classList.add('mini_box')
         span.classList.add('minutes')
         span.classList.add('p')
@@ -50,7 +50,7 @@ min.innerHTML=cu
 min.style.color = 'white'
 let del = document.querySelector('.del')
 let mini_box = document.querySelector('.mini_box')
-let v=
+
 del.onclick = () => {
     mini_box.remove()
 }
