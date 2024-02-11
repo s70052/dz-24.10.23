@@ -1,62 +1,70 @@
-let submit = document.querySelector('.submit')
-let big = document.querySelector('.big')
+const form = document.forms.add_task
+const container = document.querySelector('.big')
+let todos = []
 
-submit.onclick = () => {
-    let text = document.querySelector('.text')
-    let value = text.value
-    text.value = ""
-    if (value !== "") {
-        //a
-        let mini_box = document.createElement('div')
-        let pokup = document.createElement('div')
-        let p = document.createElement('p')
-        let img = document.createElement('img')
-        let span = document.createElement('span')
-        //b
 
-        
-      let time=new Date()
-      let cur=time.getHours()+':'+time.getMinutes()+':'+time.getSeconds()
-    p.style.fontFamily='Italianno'
-        mini_box.classList.add('mini_box')
-        span.classList.add('minutes')
-        span.classList.add('p')
-        pokup.classList.add('pokup')
-       span.style.color='white'
-        img.src = './xbutton_87873.png'
-        img.classList.add('del')
-        p.innerHTML = value + ':)'
-        span.innerHTML=cur
-     
-        //c
-        big.append(mini_box)
-        mini_box.append(pokup,span)
-        pokup.append(p, img)
 
-     
+form.onsubmit = (e) => {
+    e.preventDefault()
 
-        img.onclick = () => {
-            mini_box.remove()
-        }
-      
+    let task = {
+        id: Math.random(),
+        task: new FormData(form).get('task'),
+        status: false,
+        time: new Date().toLocaleTimeString('uz-UZ', { hour12: true })
     }
- 
-}
-let min=document.querySelector('.minutes')
 
-let tim=new Date()
-let cu=tim.getHours()+':'+tim.getMinutes()+':'+tim.getSeconds()
-min.innerHTML=cu
-min.style.color = 'white'
-let del = document.querySelector('.del')
-let mini_box = document.querySelector('.mini_box')
-
-del.onclick = () => {
-    mini_box.remove()
+    if (task.task.trim() !== "") {
+        todos.push(task)
+        reload(todos, container)
+    }
+    task.status = true
+    console.log(todos)
 }
 
+function reload(arr, place) {
+    place.innerHTML = ""
+
+    for (let item of arr) {
+        let div = document.createElement('div')
+        let top_box = document.createElement('div')
+        let p = document.createElement('p')
+        let del = document.createElement('img')
+        let time = document.createElement('span')
+
+        div.classList.add('mini_box')
+        top_box.classList.add('pokup')
+        time.classList.add('minutes')
+        del.classList.add('del')
+        p.classList.add('p')
+        p.innerHTML = item.task
+        time.innerHTML = item.time
+        del.src = './xbutton_87873.png'
+
+        div.append(top_box, time)
+        top_box.append(p, del)
+        place.append(div)
 
 
+        del.onclick = () => {
+            todos = todos.filter(el => el.id !== item.id)
+
+            div.classList.add('remove-anim')
+
+            setTimeout(() => {
+                div.remove()
+            }, 500)
+            item.status = false
+        }
+        div.ondblclick = () => {
+            let a = prompt('&&&&&&&&&&&&&&&&')
+            p.innerHTML = a
+        }
+        p.onclick = () => {
+            p.classList.toggle('a')
+        }
+    }
+}
 
 
 
