@@ -47,14 +47,16 @@ function reload(arr, place) {
 
 
         del.onclick = () => {
+            item.status = false
+            console.log(todos)
             todos = todos.filter(el => el.id !== item.id)
-
+          
             div.classList.add('remove-anim')
 
             setTimeout(() => {
                 div.remove()
             }, 500)
-            item.status = false
+          
         }
         div.ondblclick = () => {
             let a = prompt('&&&&&&&&&&&&&&&&')
