@@ -23,7 +23,7 @@ form.onsubmit = (e) => {
 }
 
 function reload(arr, place) {
-    place.innerHTML = ""
+    // place.innerHTML = ""
 
     for (let item of arr) {
         let div = document.createElement('div')
