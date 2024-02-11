@@ -115,7 +115,8 @@ p{
     color: white;
     text-align: start;
     margin-top: -10px;
-    position: relative; 
+    position: relative;
+  
 }
 
 
@@ -124,7 +125,7 @@ p::after {
     position: absolute;
     bottom: 19px;
     left: -300px;
-    width: 100%;
+    width: 70%;
     border-bottom: 2px solid crimson; 
     transition:  .8s ease;
 
@@ -132,6 +133,7 @@ p::after {
 
 .a::after{
     left: 0;
+    
 }
 p::-webkit-scrollbar {
     display: none;
