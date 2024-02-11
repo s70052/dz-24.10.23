@@ -125,7 +125,7 @@ p::after {
     position: absolute;
     bottom: 19px;
     left: -300px;
-    width: 70%;
+    width: 85%;
     border-bottom: 2px solid crimson; 
     transition:  .8s ease;
 
