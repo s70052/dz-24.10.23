@@ -8,26 +8,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&family=Roboto+Condensed&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrap">
+        <h2>добавление, изменение и удаление элемента из таблицы</h2>
         <div class="box">
-            <h1>Todo List</h1>
-            <form class="inp" name="add_task" >
-                <input class="text" type="text" name="task" id="">
-                <button class="submit">Add</button>
-            </form>
-            <div class="tire"></div>
-            <div class="big">
-                
+            <div class="item">
+                <p>Имя</p>
+                <input class="name" type="name">
+            </div>
+            <div class="item">
+                <p>Возраст</p>
+                <input class="age" type="number">
+            </div>
+            <div class="ilem">
+                <button class="btn">показать</button>
             </div>
         </div>
+        <div class="dannie">
+            <h3 class="h3">No</h3>
+            <h3 class="h3">Имя студента</h3>
+            <h3 class="h3">Год рождения</h3>
+            <h3 class="h3">Действия</h3>
+        </div>
+        <div class="tb">
+            <!-- <table>
+            <tr>
+                <th class="e">1</th>
+                <th>Brucee Reys</th>
+                <th>1997</th>
+                <th>
+                    <div class="imgs">
+                        <img class="change" src="./8666681_edit_icon.svg" alt="dss">
+                        <img class="trash" src="./4781812_bin_delete_file_garbage_recycle_icon.png" alt="trash">
+                    </div>
+                </th>
+            </tr>
+        </table> -->
+        </div>
+        <dialog class="di">
+            <div class="boxx">
+
+                <div class="itemm">
+                    <div class="ff">
+                        <p>Имя</p>
+                        <img class="del" src="./5402366_delete_remove_cross_cancel_close_icon.png" alt="">
+                    </div>
+                    <input class="namee" type="name">
+                </div>
+                <div class="item">
+                    <p>Возраст</p>
+                    <input class="agee" type="number">
+                </div>
+                <div class="ilemm">
+                    <button class="btnn">изменить</button>
+                </div>
+            </div>
+        </dialog>
     </div>
-    <script src="./index.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
