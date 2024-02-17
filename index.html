@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&family=Roboto+Condensed&display=swap"
         rel="stylesheet">
@@ -15,63 +13,68 @@
 
 <body>
     <div class="wrap">
-        <h2>добавление, изменение и удаление элемента из таблицы</h2>
         <div class="box">
-            <div class="item">
-                <p>Имя</p>
-                <input class="name" type="name">
-            </div>
-            <div class="item">
-                <p>Возраст</p>
-                <input class="age" type="number">
-            </div>
-            <div class="ilem">
-                <button class="btn">показать</button>
-            </div>
+            <h2>Dashboard</h2>
+            <button id="btn">Добавить задачу</button>
+        </div>
+        <div class="box2">
+            <h4>Показать задачи как:</h4>
+            <p id="tab">Таблица</p>
+            <p id="plit">Плитка</p>
         </div>
         <div class="dannie">
-            <h3 class="h3">No</h3>
-            <h3 class="h3">Имя студента</h3>
-            <h3 class="h3">Год рождения</h3>
-            <h3 class="h3">Действия</h3>
+            <div class="bix">
+                <h3 class="h3">Заголовок задачи</h3>
+                <h3 class="h3">Описание задачи</h3>
+            </div>
+            <div class="bix2">
+                <h3 class="h3">Дата</h3>
+                <h3 class="h3">Время</h3>
+                <h3 class="h3">Выполнено</h3>
+            </div>
         </div>
         <div class="tb">
             <!-- <table>
-            <tr>
-                <th class="e">1</th>
-                <th>Brucee Reys</th>
-                <th>1997</th>
-                <th>
-                    <div class="imgs">
-                        <img class="change" src="./8666681_edit_icon.svg" alt="dss">
-                        <img class="trash" src="./4781812_bin_delete_file_garbage_recycle_icon.png" alt="trash">
-                    </div>
-                </th>
-            </tr>
-        </table> -->
+                <tr>
+                    <th class="vue">Переписать проект на Vue </th>
+                    <th class="vue2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium excepturi
+                    </th>
+                    <th class="vue3">21.02.2023</th>
+                    <th class="vue4">14:31</th>
+                    <th>Не выполнено</th>
+                </tr>
+            </table> -->
+        </div>
+        <div class="tp">
+            <!-- <div class="white_box">
+                <div class="jjj">
+                <h4>Переписать проект на Vue </h4>
+                <p class="lor">Quia et suscipit\nsuscipit recusandae  consequuntur expedita et cum\nreprehenderit <br> molestiae ut ut
+                    quas totam\nnostrum rerum  est autem sunt rem eveniet architecto</p>
+                 <div class="h">
+                    <h5>21.10.21</h5>
+                    <h5>14:31</h5>
+                 </div>
+                 <div class="ppp">
+                 <p class="pp">В процессе</p>
+                 </div>
+                </div>
+            </div> -->
         </div>
         <dialog class="di">
-            <div class="boxx">
-
-                <div class="itemm">
-                    <div class="ff">
-                        <p>Имя</p>
-                        <img class="del" src="./5402366_delete_remove_cross_cancel_close_icon.png" alt="">
-                    </div>
-                    <input class="namee" type="name">
-                </div>
-                <div class="item">
-                    <p>Возраст</p>
-                    <input class="agee" type="number">
-                </div>
-                <div class="ilemm">
-                    <button class="btnn">изменить</button>
-                </div>
+            <div class="cc">
+                <h2>Добавить</h2>
+                <img class="del" src="./5402366_delete_remove_cross_cancel_close_icon.png" alt="">
             </div>
+            <input id="one" type="text" placeholder="Заголовок"><br><br>
+            <input id="two" type="text" placeholder="Описание"><br><br>
+            <input id="three" type="text" placeholder="Время (type=time)"><br><br>
+            <input id="four" type="text" placeholder="Время (type=date)"><br><br>
+            <input id="five" type="text" placeholder="Тип задачи (select - option - new/progress/done)">
+            <button class="bt">Добавить</button>
         </dialog>
     </div>
-
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

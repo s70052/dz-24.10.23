@@ -6,90 +6,61 @@
 
 .wrap {
     width: 1200px;
-    padding-block: 20px 0;
-
     margin: 0 auto;
-}
-
-h2 {
-    text-transform: uppercase;
-    font-family: Raleway;
-    font-size: 26px;
+    padding-block: 20px 0;
 }
 
 .box {
     display: flex;
-    gap: 15px;
-    padding-block: 50px 0;
+    gap: 20px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 48px;
+    font-family: Raleway;
+}
+
+button {
+    width: 183px;
+    height: 46px;
+    border-radius: 10px;
+    border: 0;
+    margin-block: 5px;
+    color: white;
+    background: #007FFF;
+    font-family: Raleway;
+}
+
+.box2 {
+    padding-block: 35px 0;
+    display: flex;
+    gap: 10px;
+}
+
+h4 {
+    font-family: Raleway;
 }
 
 p {
     font-family: Raleway;
-    padding-block: 0px 5px;
-    font-weight: 600;
 }
 
-input {
-    width: 250px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.179);
-    font-family: Poppins;
-}
-
-input:focus {
-    outline: none;
-    font-size: 16px;
-    font-family: Poppins;
-    border: 2px solid rgb(131, 131, 223);
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
-
-.ilem {
-    padding-block: 24px;
+.bix {
+    display: flex;
+    gap: 150px;
 
 }
 
-.ilemm {
-    padding-block: 10px;
-
-}
-
-.trash {
-    width: 29%;
-    object-fit: contain;
-}
-
-.change {
-    width: 29%;
-    object-fit: contain;
-}
-
-button {
-
-    font-weight: 600;
-    font-family: Raleway;
-    color: white;
-    background: rgb(0, 145, 255);
-    height: 40px;
-    width: 80px;
-    border-radius: 5px;
-    border: 0;
-    font-size: 15px;
+.bix2 {
+    display: flex;
+    gap: 100px;
 }
 
 .dannie {
     display: flex;
-    gap: 180px;
-    align-items: flex-start;
-    padding-block: 25px 0;
+    gap: 360px;
+    padding-block: 37px 0;
 }
 
 .h3 {
@@ -100,13 +71,13 @@ button {
 
 table {
     border-collapse: collapse;
-    width: 70%;
+    width: 100%;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     gap: 30px;
     border-color: rgba(192, 192, 192, 0.137);
-    transition: .5s ease all;
-
+position: relative;
+top: 20px;
 }
 
 th {
@@ -114,64 +85,51 @@ th {
     border-right: none;
     padding: 8px;
     text-align: left;
-    font-family: Poppins;
+    font-family: Raleway;
 
 }
-.thh{
-width: 110px;
-}
-.thhh{
-    width: 50px;
-    }
+
 tr {
     display: flex;
-    justify-content: start;
-    gap: 173px;
-    transition: .5s ease all;
+padding-block: 5px 0;
 }
 
-.tb {
-    padding-block: 10px 0;
-}
-
-.e {
+.vue {
+    width: 270px;
+    font-family: Raleway;
     position: relative;
-    left: -3px;
+    left: -6px;
 }
 
-.imgs {
-    position: relative;
-    left: 55px;
-    display: flex;
-    gap: 5px;
+.vue2 {
+    width: 480px;
+
 }
 
+.vue3 {
+    width: 140px;
 
-
-.aa {
-
-    transform: translateX(-100%);
-    transition: transform 1s ease;
 }
-.aaa{
 
-    transform: translateX(-200%);
-    transition: transform 1s ease;
+.vue4 {
+    width: 145px;
 }
+
 .di{
-    position: absolute;
+    position: relative;
     top: 30%;
     left: -300%;
     /* translate: -50% -50%; */
     padding: 20px;
     border: none;
     border-radius: 12px;
-    width: 400px;
-    height: 250px;
+    width: 632px;
+    height: 577px;
+    text-align: center;
 }
 
 .dial {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 30%;
     transition: .8s ease;
@@ -180,18 +138,95 @@ tr {
 dialog::-webkit-scrollbar {
     outline: none;
 }
-
-.itemm {
-    padding-block: 0 10px;
+#tab{
+    padding-block: 15px 0;
 }
+#plit{
+    padding-block: 15px 0;
+}
+
+
 
 .del {
     width: 8%;
     object-fit: contain;
-    margin-top: -10px;
+
 }
 
-.ff {
+
+.aaa{
+    transform: translateX(-200%);
+    transition: transform 1s ease;
+}
+.c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+  
+}
+input{
+    width: 450px;
+  height: 65px;
+  border-radius: 10px;
+padding-block: 10px 10px;
+}
+.cc{
     display: flex;
     justify-content: space-between;
+    padding-block: 0 30px;
+}
+input:focus{
+    outline: none;
+    border: 3px solid blue;
+}
+.bt{
+    width: 450px;
+    height: 65px;
+    border-radius: 10px;
+ background: #007FFF;
+ color: white;
+ text-align: center;
+ padding-block: 5px;
+}
+.white_box{
+    width: 370px;
+    height: 218px;
+    background: rgba(255, 255, 255, 0.967);
+    border-radius: 10px;
+    
+}
+body{
+    background: #8f8c8c2b;
+}
+h4{
+    font-size: 20px;
+    padding-block: 10px 10px;
+}
+.jjj{
+    padding-inline: 15px 0;
+    padding-block: 10px 0;
+}
+.lor{
+    color: #A5A5B4;
+    padding-block: 0 10px ;
+    font-family: Raleway;
+    width: 98%;
+}
+.h{
+    display: flex; 
+    gap: 20px;
+padding-block: 10px 5px;
+font-family: Raleway;
+}
+.pp{
+    padding-block: 10px 0;
+    color: blue;
+    font-family: Raleway;
+}
+h5{
+    font-size: 17px;
+}
+.tp{
+    padding-block: 20px 0;
 }
