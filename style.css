@@ -26,10 +26,12 @@ h1 {
 @keyframes anim {
     0% {
         transform: translateX(0%);
+       
     }
 
     30% {
-        transform: translateY(-10%)
+        transform: translateY(-10%);
+        opacity: 1;
     }
 
     35% {
@@ -85,11 +87,34 @@ h1 {
     }
 
     94% {
-        transform: translateY(-10%);
+        transform: translateY(-10%)
+        scale(0);
+
     }
 
-    100% {
-        transform: translateX(0%);
+    94% {
+        transform: translateY(0%)
+        scale(0);
+     
+    }
+    95%{
+        transform: translateY(0%)
+        scale(0);  
+    
+    }
+    96%{
+        transform: translateY(0%)
+        scale(0);  
+    
+    }
+    97%{
+        transform: translateY(0%)
+        scale(0);  
+    }
+    100%{
+        transform: translateY(0%)
+        scale(1);  
+        opacity: 1;
     }
 }
 
@@ -184,5 +209,6 @@ form button {
 }
 
 #name:focus {
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 7px;
+    font-family: Raleway;
 }
