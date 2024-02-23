@@ -5,6 +5,7 @@ let count = 0
 let error = document.querySelector('#error')
 let success = document.querySelector('#success')
 let succes = 0
+let need=document.querySelector('.need')
 form.onsubmit = (event) => {
     event.preventDefault()
     count = 0

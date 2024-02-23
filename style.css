@@ -22,24 +22,57 @@ h1 {
     gap: 20px;
     padding-block: 10px 50px;
 }
-@keyframes anim{
-    0%{
+
+@keyframes anim {
+    0% {
         transform: translateX(0%);
     }
 
-    40%{
+    40% {
         transform: translateY(-400%)
-    
-    } 
-    70%{
-        transform: translateX(-300%)
-  
     }
- 
-    100%{
+
+    70% {
+        transform: translateX(-300%)
+    }
+
+    80% {
+        transform: translateX(0%);
+    }
+
+    82% {
+        transform: translateY(-10%);
+    }
+
+    84% {
+        transform: translateY(10%);
+    }
+
+    86% {
+        transform: translateY(-10%);
+    }
+
+    88% {
+        transform: translateY(10%);
+    }
+
+    90% {
+        transform: translateY(-10%);
+    }
+
+    92% {
+        transform: translateY(10%);
+    }
+
+    94% {
+        transform: translateY(-10%);
+    }
+
+    100% {
         transform: translateX(0%);
     }
 }
+
 form {
     position: relative;
     width: fit-content;
@@ -51,9 +84,11 @@ form {
     animation: anim 4s ease-in-out 1s;
 
 }
-p{
+
+p {
     font-family: Poppins;
 }
+
 form .col {
     display: flex;
     flex-direction: column;
@@ -109,9 +144,11 @@ form button {
 .error input {
     border-color: red;
 }
-.error{
+
+.error {
     color: red;
 }
+
 .need {
     color: #595959;
     font-size: 11px;
@@ -126,6 +163,6 @@ form button {
     padding-block: 11px 10px;
 }
 
-#name:focus{
+#name:focus {
     box-shadow: 0 0 5px;
 }
