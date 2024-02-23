@@ -4,77 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&family=Roboto+Condensed&display=swap"
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&amp;family=Raleway&amp;display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="box">
-            <h2>Dashboard</h2>
-            <button id="btn">Добавить задачу</button>
-        </div>
-        <div class="box2">
-            <h4>Показать задачи как:</h4>
-            <p id="tab">Таблица</p>
-            <p id="plit">Плитка</p>
-        </div>
+        <h1>Example form</h1>
         <div class="dannie">
-            <div class="bix">
-                <h3 class="h3">Заголовок задачи</h3>
-                <h3 class="h3">Описание задачи</h3>
-            </div>
-            <div class="bix2">
-                <h3 class="h3">Дата</h3>
-                <h3 class="h3">Время</h3>
-                <h3 class="h3">Выполнено</h3>
-            </div>
+            <p>All: 15</p>
+            <p>Need: 12</p>
+            <p id="success">Success: 8/12</p>
+            <p id="error">Error: 4/12</p>
         </div>
-        <div class="tb">
-            <!-- <table>
-                <tr>
-                    <th class="vue">Переписать проект на Vue </th>
-                    <th class="vue2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium excepturi
-                    </th>
-                    <th class="vue3">21.02.2023</th>
-                    <th class="vue4">14:31</th>
-                    <th>Не выполнено</th>
-                </tr>
-            </table> -->
-        </div>
-        <div class="tp">
-            <!-- <div class="white_box">
-                <div class="jjj">
-                <h4>Переписать проект на Vue </h4>
-                <p class="lor">Quia et suscipit\nsuscipit recusandae  consequuntur expedita et cum\nreprehenderit <br> molestiae ut ut
-                    quas totam\nnostrum rerum  est autem sunt rem eveniet architecto</p>
-                 <div class="h">
-                    <h5>21.10.21</h5>
-                    <h5>14:31</h5>
-                 </div>
-                 <div class="ppp">
-                 <p class="pp">В процессе</p>
-                 </div>
-                </div>
-            </div> -->
-        </div>
-        <dialog class="di">
-            <div class="cc">
-                <h2>Добавить</h2>
-                <img class="del" src="./5402366_delete_remove_cross_cancel_close_icon.png" alt="">
-            </div>
-            <input id="one" type="text" placeholder="Заголовок"><br><br>
-            <input id="two" type="text" placeholder="Описание"><br><br>
-            <input id="three" type="text" placeholder="Время (type=time)"><br><br>
-            <input id="four" type="text" placeholder="Время (type=date)"><br><br>
-            <input id="five" type="text" placeholder="Тип задачи (select - option - new/progress/done)">
-            <button class="bt">Добавить</button>
-        </dialog>
     </div>
-    <script src="./index.js"></script>
+    <form name="signup">
+        <div class="col">
+            <label id="one" class="req" for="name">
+                <span>Name</span>
+                <input id="name" type="text" name="name"  />
+                <span class="need">Need to fill</span>
+            </label>
+            <label id="one" for="surname">
+                <span>Surname</span>
+                <input id="nam" type="text" name="surname" />
+            </label>
+            <label id="one" class="req" for="email">
+                <span>Email adress</span>
+                <input id="name" type="text" name="email" />
+                <span class="need">Need to fill</span>
+            </label>
+            <label id="one" for="Phone number">
+                <span>Phone number</span>
+                <input id="nam" type="text" name="Phone number"  />
+            </label>
+            <label id="one" for="Your Mom's name">
+                <span>Your Mom's name</span>
+                <input id="nam" type="text" name="Your Mom's name" />
+            </label>
+             <label id="one" for="name">
+                <span>Your Pap's name</span>
+                <input id="nam" type="text" name="Your Pap's name" />
+            </label>
+        </div>
+
+        <div class="coll">
+            <label id="two" class="req" for="age">
+                <span>age</span>
+                <input id="name" type="age" name="age" />
+                <span class="need">Need to fill</span>
+            </label>
+            <label id="two" class="req" for="About you">
+                <span>About you</span>
+                <input id="name" type="text" name="About you" />
+                <span class="need">Need to fill</span>
+            </label>
+            <label id="two" class="req" for="What is JavaScript?">
+                <span>What is JavaScript?</span>
+                <input id="name" type="text" name="What is JavaScript?" />
+                <span class="need">Need to fill</span>
+            </label>
+            <label id="two" class="req" for="What is HTML?">
+                <span>What is HTML?</span>
+                <input id="name" type="text" name="What is HTML?" />
+                <span class="need">Need to fill</span>
+            </label>
+            <label id="two" class="req" for="What is CSS?">
+                <span>What is CSS?</span>
+                <input id="name" type="text" name="What is CSS?" />
+                <span class="need">Need to fill</span>
+            </label>
+            <label for="Your favorite car">
+                <span>Your favorite car</span>
+                <input id="nam" type="text" name="Your favorite car" />
+            </label>
+        </div>
+        <button>Save changes</button>
+    </form>
+
+
+
+
+<script src="./script.js"></script>
 </body>
 
 </html>

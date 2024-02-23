@@ -2,231 +2,130 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 .wrap {
     width: 1200px;
     margin: 0 auto;
-    padding-block: 20px 0;
 }
 
-.box {
-    display: flex;
-    gap: 20px;
-}
-
-h2 {
-    color: #000000;
-    font-size: 48px;
+h1 {
+    text-align: center;
+    font-size: 46px;
     font-family: Raleway;
-}
-
-button {
-    width: 183px;
-    height: 46px;
-    border-radius: 10px;
-    border: 0;
-    margin-block: 5px;
-    color: white;
-    background: #007FFF;
-    font-family: Raleway;
-}
-
-.box2 {
-    padding-block: 35px 0;
-    display: flex;
-    gap: 10px;
-}
-
-h4 {
-    font-family: Raleway;
-}
-
-p {
-    font-family: Raleway;
-}
-
-.bix {
-    display: flex;
-    gap: 150px;
-
-}
-
-.bix2 {
-    display: flex;
-    gap: 100px;
 }
 
 .dannie {
     display: flex;
-    gap: 360px;
-    padding-block: 37px 0;
-}
-
-.h3 {
-    font-family: Raleway;
-    color: rgba(0, 0, 0, 0.379);
-    font-size: 15px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    gap: 30px;
-    border-color: rgba(192, 192, 192, 0.137);
-position: relative;
-top: 20px;
-}
-
-th {
-    border-left: none;
-    border-right: none;
-    padding: 8px;
-    text-align: left;
-    font-family: Raleway;
-
-}
-
-tr {
-    display: flex;
-padding-block: 5px 0;
-}
-
-.vue {
-    width: 270px;
-    font-family: Raleway;
-    position: relative;
-    left: -6px;
-}
-
-.vue2 {
-    width: 480px;
-
-}
-
-.vue3 {
-    width: 140px;
-
-}
-
-.vue4 {
-    width: 145px;
-}
-
-.di{
-    position: relative;
-    top: 30%;
-    left: -300%;
-    /* translate: -50% -50%; */
-    padding: 20px;
-    border: none;
-    border-radius: 12px;
-    width: 632px;
-    height: 577px;
-    text-align: center;
-}
-
-.dial {
-    position: relative;
-    top: 30%;
-    left: 30%;
-    transition: .8s ease;
-}
-
-dialog::-webkit-scrollbar {
-    outline: none;
-}
-#tab{
-    padding-block: 15px 0;
-}
-#plit{
-    padding-block: 15px 0;
-}
-
-
-
-.del {
-    width: 8%;
-    object-fit: contain;
-
-}
-
-
-.aaa{
-    transform: translateX(-200%);
-    transition: transform 1s ease;
-}
-.c{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
- 
+    gap: 20px;
+    padding-block: 10px 50px;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+
+    40%{
+        transform: translateY(-400%)
+    
+    } 
+    70%{
+        transform: translateX(-300%)
   
+    }
+ 
+    100%{
+        transform: translateX(0%);
+    }
 }
-input{
-    width: 450px;
-  height: 65px;
-  border-radius: 10px;
-padding-block: 10px 10px;
-}
-.cc{
+form {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-block: 0 30px;
+    gap: 80px;
+    align-items: start;
+    animation: anim 4s ease-in-out 1s;
+
 }
-input:focus{
-    outline: none;
-    border: 3px solid blue;
+p{
+    font-family: Poppins;
 }
-.bt{
-    width: 450px;
-    height: 65px;
-    border-radius: 10px;
- background: #007FFF;
- color: white;
- text-align: center;
- padding-block: 5px;
+form .col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.white_box{
-    width: 370px;
-    height: 218px;
-    background: rgba(255, 255, 255, 0.967);
-    border-radius: 10px;
-    
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-body{
-    background: #8f8c8c2b;
-}
-h4{
-    font-size: 20px;
-    padding-block: 10px 10px;
-}
-.jjj{
-    padding-inline: 15px 0;
-    padding-block: 10px 0;
-}
-.lor{
-    color: #A5A5B4;
-    padding-block: 0 10px ;
+
+label span {
+    text-transform: capitalize;
     font-family: Raleway;
-    width: 98%;
+    font-size: 14px;
 }
-.h{
-    display: flex; 
-    gap: 20px;
-padding-block: 10px 5px;
-font-family: Raleway;
+
+input[type="text"],
+input[type="age"] {
+    width: 260px;
+    height: 55px;
+    font-family: Raleway;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
 }
-.pp{
-    padding-block: 10px 0;
-    color: blue;
+
+form button {
+    all: unset;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: Raleway;
+    background-color: rgb(35, 35, 191);
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 250px;
+    height: 55px;
+    font-size: 16px;
+}
+
+.req {
+    color: #543fd3;
+}
+
+.req input {
+    border: 3px solid #543fd3;
+}
+
+.error input {
+    border-color: red;
+}
+.error{
+    color: red;
+}
+.need {
+    color: #595959;
+    font-size: 11px;
     font-family: Raleway;
 }
-h5{
-    font-size: 17px;
+
+#two {
+    padding-block: 10px 12px;
 }
-.tp{
-    padding-block: 20px 0;
+
+#one {
+    padding-block: 11px 10px;
+}
+
+#name:focus{
+    box-shadow: 0 0 5px;
 }
