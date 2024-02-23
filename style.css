@@ -28,6 +28,26 @@ h1 {
         transform: translateX(0%);
     }
 
+    30% {
+        transform: translateY(-10%)
+    }
+
+    35% {
+        transform: translateY(10%)
+    }
+
+    37% {
+        transform: translateY(-10%)
+    }
+
+    38% {
+        transform: translateY(10%)
+    }
+
+    39% {
+        transform: translateY(0%)
+    }
+
     40% {
         transform: translateY(-400%)
     }
