@@ -244,6 +244,8 @@ dialog{
     top: 30%;
     box-shadow: 5px 5px 10px 10px red;
     border: 2px solid red;
+    background: linear-gradient(red,blue,rgb(194, 22, 194));
+    border-radius: 20px;
 }
 .s{
     width: 620px;
@@ -260,3 +262,13 @@ h2{
    color: red;
   
 }
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Webkit browsers */
+    margin: 0; /* Optional - if you don't want the buttons to be visible at all */
+  }
