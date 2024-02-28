@@ -4,97 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&amp;family=Raleway&amp;display=swap"
+    <title>Movie DB</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext"
         rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&family=Roboto+Condensed&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="wrap">
-        <h1>Example form</h1>
-        <div class="dannie">
-            <p>All: 15</p>
-            <p>Need: 12</p>
-            <p id="success">Success: 8/12</p>
-            <p id="error">Error: 4/12</p>
+    <header class="header">
+        <div class="header__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск">
+            </form>
         </div>
-    
-    <form name="signup">
-        <div class="col">
-            <label id="one" class="req" for="name">
-                <span>Name</span>
-                <input class="name" id="name" type="text" name="name"  />
-                <span class="need">Need to fill</span>
-            </label>
-            <label id="one" for="surname">
-                <span>Surname</span>
-                <input class="name" id="nam" type="text" name="surname" />
-            </label>
-            <label id="one" class="req" for="email">
-                <span>Email adress</span>
-                <input class="email" id="name" type="text" name="email" />
-                <span class="need">Need to fill</span>
-            </label>
-            <label id="one" for="Phone number">
-                <span>Phone number</span>
-                <input class="number" id="nam" type="text" name="Phone number"  />
-            </label>
-            <label id="one" for="Your Mom's name">
-                <span>Your Mom's name</span>
-                <input class="name" id="nam" type="text" name="Your Mom's name" />
-            </label>
-             <label id="one" for="name">
-                <span>Your Pap's name</span>
-                <input class="name" id="nam" type="text" name="Your Pap's name" />
-            </label>
+        <div class="header__logo">
+            <img src="icons/Logotype.svg" alt="logo">
         </div>
-
-        <div class="coll">
-            <label id="two" class="req" for="age">
-                <span>age</span>
-                <input class="needd age" id="name" type="number" name="age" />
-                <span class="need">Need to fill</span>
-            </label>
-            <label id="two" class="req" for="About you">
-                <span>About you</span>
-                <input id="name" type="text" name="About you" />
-                <span class="need ">Need to fill</span>
-            </label>
-            <label id="two" class="req" for="What is JavaScript?">
-                <span>What is JavaScript?</span>
-                <input id="name" type="text" name="What is JavaScript?" />
-                <span class="need">Need to fill</span>
-            </label>
-            <label id="two" class="req" for="What is HTML?">
-                <span>What is HTML?</span>
-                <input id="name" type="text" name="What is HTML?" />
-                <span class="need">Need to fill</span>
-            </label>
-            <label id="two" class="req" for="What is CSS?">
-                <span>What is CSS?</span>
-                <input id="name" type="text" name="What is CSS?" />
-                <span class="need">Need to fill</span>
-            </label>
-            <label for="Your favorite car">
-                <span>Your favorite car</span>
-                <input id="nam" type="text" name="Your favorite car" />
-            </label>
+    </header>
+    <main class="promo">
+        <div class="promo__menu">
+            <nav class="promo__menu-list">
+                <ul>
+                    <li><a class="promo__menu-item promo__menu-item_active" href="#">Фильмы</a></li>
+                    <li><a class="promo__menu-item" href="#">Сериалы</a></li>
+                    <li><a class="promo__menu-item" href="#">Мультфильмы</a></li>
+                    <li><a class="promo__menu-item" href="#">Клипы</a></li>
+                    <li><a class="promo__menu-item" href="#">Трейлеры</a></li>
+                </ul>
+            </nav>
         </div>
-        <button>Save changes</button>
-    </form>
-    <div class="ss">
-    <dialog>
-<h2>Error</h2>
-    </dialog>
-</div>
-</div>
+        <div class="promo__content">
+            <div class="promo__bg">
+                <div class="promo__genre">КОМЕДИЯ</div>
+                <div class="promo__title">МАРСИАНИН</div>
+                <div class="promo__descr">ИСТОРИЯ ЧЕЛОВЕКА, ВЫЖИВШЕГО НА ЧУЖОЙ ПЛАНЕТЕ В ОДИНОЧКУ</div>
+                <div class="promo__ratings">
+                    <span>IMDb: 8.0</span>
+                    <span>Кинопоиск: 7.7</span>
+                </div>
+            </div>
+            <div class="promo__interactive">
+                <div>
+                    <div class="promo__interactive-title">ПРОСМОТРЕННЫЕ ФИЛЬМЫ</div>
+                    <ul class="promo__interactive-list">
+                        <li class="promo__interactive-item">ЛОГАН
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛИГА СПРАВЕДЛИВОСТИ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛА-ЛА ЛЭНД
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ОДЕРЖИМОСТЬ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">СКОТТ ПИЛИГРИМ ПРОТИВ...
+                            <div class="delete"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="add">
+                        <div class="promo__interactive-title">ДОБАВИТЬ НОВЫЙ ФИЛЬМ</div>
+                        <span>Введите название фильма</span>
+                        <input class="adding__input" type="text" placeholder="Что уже посмотрено...?">
+                        <span>Сделать его любимым?</span>
+                        <input type="checkbox">
+                        <span class="yes">Да!</span>
+                        <button>Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="promo__adv">
+            <div class="promo__adv-title">Реклама от спонсоров</div>
+            <img class="im" src="img/content_1.jpg" alt="some picture">
+            <img class="im" src="img/content_2.jpg" alt="some picture">
+            <img class="im" src="img/content_3.png" alt="some picture">
+        </div>
+        <dialog>
+            <div class="di">
+            <div class="box_img">
+                <img class="gul" src="./img/Аннотация 2024-02-27 173351.png" alt="">
+            </div>
+            <div class="box_menu">
+                <h1>Vitality shot</h1>
+            <div class="bts">
+             <button class="pepper">
+                <img src="./img/Аннотация 2024-02-27 191039.png" alt="">
+                <h3>black pepper</h3>
+             </button>
+             <button class="l">
+                <img src="./img/Аннотация 2024-02-27 190923.png" alt="">
+                <h3>turmeric</h3>
+             </button>
+            </div>
+            <div class="btns">
+               <button class="ll">
+                <img src="./img/Аннотация 2024-02-27 191946.png" alt="">
+                <h3>lemon</h3>
+               </button>
+               <button class="pepperr">
+                <img src="./img/Аннотация 2024-02-27 200029.png" alt="">
+                <h3>coconut water</h3>
+               </button>
+            </div>
+            <div class="li">
+            <ul>
+                <li>"Vitality Shot" combines turmeric and lemon for anti- 
+                    inflammatory and vitamin C benefits.</li>
+                <li>﻿﻿Coconut water adds creaminess and hydration.
+                    ﻿﻿Black pepper aids turmeric absorption.</li>
+                <li> Together, they offer a balanced mix of flavors and nutrients for energy and wellness.</li>
+            
+            </ul>
+            <div class="lear">
+            <button class="learn">LEARN MORE
+                <img src="./img/free-icon-thin-arrow-12857560.png" alt="">
+            </button>
+        </div>
+        <button class="circle">
+          <img class="circ" src="./img/8666595_x_icon.png" alt="">
+        </button>
+        </div>
+            </div>
+        </div>
+        </dialog>
+    </main>
 
-
-
-<script src="./script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
-
-
