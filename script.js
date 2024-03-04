@@ -66,7 +66,10 @@ let iiiiii = document.createElement('p')
 let o = document.createElement('p')
 let oo = document.createElement('p')
 let ooo = document.createElement('p')
-
+let oooo= document.createElement('p')
+let x=document.createElement('p')
+let xx=document.createElement('p')
+let xxx=document.createElement('p')
 box.classList.add('box')
 left.classList.add('left')
 p.innerHTML = 'Москва'
@@ -89,13 +92,14 @@ bix.classList.add('bix')
 log.classList.add('log')
 log.src = 'https://cms.mvideo.ru/magnoliaPublic/dam/jcr:f57062ef-960d-4458-b10e-314bf7573980'
 lupa.classList.add('lupa')
-log2.src='./img/Аннотация 2024-02-29 185906.png'
+log2.src='./9104209_hamburger_menu_navigation_navbar_icon.png'
+log2.classList.add('menu')
 log_p.innerHTML='Каталог'
 log2.classList.add('lu')
 inn.classList.add('in')
 inp.classList.add('inp')
 red.classList.add('red')
-find.src='./img/1814075_find_magnifier_magnifying glass_search_icon.png'
+find.src='./5402443_search_find_magnifier_magnifying_magnifying glass_icon.png'
 find.classList.add('find')
 
 
@@ -116,6 +120,10 @@ ww.innerHTML='Сравнение'
 www.innerHTML='Избранное'
 wwww.innerHTML='Корзина'
 
+www.classList.add('we')
+wwww.classList.add('we')
+w.classList.add('wee')
+
 i.classList.add('pp')
 ii.innerHTML='ВСЕ АКЦИИ'
 iii.innerHTML='СКИДКИ НА ПОДАРКИ'
@@ -125,6 +133,10 @@ iiiiii.innerHTML='УСПЕЙ КУПИТЬ'
 o.innerHTML='ХОЛОДИЛЬНИКИ'
 oo.innerHTML='ТЕЛЕВИЗОРЫ'
 ooo.innerHTML='PREMIUM'
+oooo.innerHTML='СТИРАЛЬНЫЕ МАШИНЫ'
+x.innerHTML='КРАСОТА И ЗДОРОВЬЕ'
+xx.innerHTML='М.МЕРЧ'
+xxx.innerHTML='ВСЕ ТОВАРЫ'
 
 wrap.append(box,box_2,i)
 box.append(left,right)
@@ -140,7 +152,7 @@ red.append(find
 bix_2.append(ix_img,ix_p)
 ix_img.append(img,img2,img3,img4,img5)
 ix_p.append(wp,w,ww,www,wwww)
-i.append(ii,iii,iiii,iiiii,iiiiii,o,oo,ooo)
+i.append(ii,iii,iiii,iiiii,iiiiii,o,oo,ooo,oooo,x,xx,xxx)
 
 
 
@@ -208,7 +220,7 @@ re.innerHTML='7 999'
 blck.innerHTML=' -50%'
 cash.innerHTML='Кешбек'
 num.innerHTML='+200'
-vw_img.src='./img/605508_bag_buy_cart_item_sale_icon.png'
+vw_img.src='../5402359_basket_cart_ecommerce_shopping_buy_icon.png'
 sa.src='./img/211754_heart_icon.png'
 saa.src='./img/Аннотация 2024-01-11 151323.png'
 

@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .wrap {
@@ -12,8 +12,14 @@
 }
 
 .container {
-    width: 1300px;
-    margin: 0 auto;
+
+    margin-block: 10px 0;
+
+
+    background-color: rgb(246, 243, 243);
+    width: 100%;
+    background-size: cover;
+    height: 400px;
 }
 
 .box {
@@ -25,6 +31,18 @@
     display: flex;
     justify-content: space-around;
     gap: 470px;
+
+
+}
+
+.we {
+    position: relative;
+    left: -20px;
+}
+
+.wee {
+    position: relative;
+    left: -10px;
 }
 
 .left {
@@ -69,7 +87,7 @@
 .lupa {
     width: 125px;
     height: 45px;
-    background: rgb(194, 19, 19);
+    background: rgb(248, 70, 70);
     border: 0;
     border-radius: 5px;
     display: flex;
@@ -78,7 +96,7 @@
 
 .lu {
     object-fit: contain;
-    width: 25%;
+    width: 22%;
     margin-top: -5px;
 }
 
@@ -103,7 +121,7 @@
 .red {
     width: 38px;
     height: 38px;
-    background: #de1335;
+    background: #f63715;
     border-radius: 5px;
     position: relative;
     top: 3px;
@@ -153,8 +171,15 @@
     gap: 30px;
     padding-inline: 60px 0;
     padding-block: 20px 0;
-    font-family: Raleway;
+    
     font-weight: 600;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.pp::-webkit-scrollbar {
+    outline: none;
 }
 
 .section {
@@ -166,19 +191,15 @@
     margin-block: 10px 0;
 }
 
-.glav{
+.glav {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
+
 .bb {
-    margin-block: 10px 0;
-    border-radius: 50px;
-  
-    background-color: rgb(246, 243, 243);
-    width: 100%;
-    background-size: cover;
-    height: 400px;
+    width: 1300px;
+    margin: 0 auto;
 }
 
 .skidka {
@@ -190,7 +211,7 @@
 
 .skidka img {
     width: 800px;
-    
+
     height: 100%;
     border-radius: 10px;
 
@@ -224,14 +245,14 @@
     border: 0;
     border-radius: 5px;
     background: #3b3b3b15;
-    
+
 
 }
 
 .te p {
     font-size: 22px;
     font-family: Raleway;
-   
+
     font-weight: 600;
     margin-inline: 10px 0;
 }
@@ -244,7 +265,7 @@
 
 .smoke {
     width: 80%;
-
+padding-inline: 10px 0;
     padding-block: 20px 0;
 }
 
@@ -257,45 +278,50 @@
 .cc {
     display: flex;
     gap: 7px;
-    
+
 }
+
 .ccc {
     display: flex;
     gap: 7px;
-   padding-block: 15px 0;
+    padding-block: 15px 0;
 }
-.ccc img{
+
+.ccc img {
     object-fit: contain;
 }
 
 .r {
-    font-family: Poppins;
+   
     color: #de1335;
     font-weight: 600;
 
 }
-.rr{
+
+.rr {
     font-family: Poppins;
     color: #de1335;
     font-weight: 600;
-font-size: 15px;
+    font-size: 15px;
 }
+
 .ot {
-    font-family: Poppins;
+   
     color: rgb(142, 133, 133);
-    font-weight: 600;
+ 
 }
 
 .bum {
-    font-family: Poppins;
+  
     color: rgb(142, 133, 133);
     font-weight: 600;
     font-size: 13px;
 }
+
 .kor {
     width: 140px;
     height: 40px;
-    background: #de1335;
+    background: #f63715;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -303,80 +329,103 @@ font-size: 15px;
     gap: 10px;
     border-radius: 5px;
     margin-block: 5px 0;
-    p{
+
+    p {
         font-size: 14px;
-        font-family: Poppins;
+       
         color: rgb(255, 253, 253);
         font-weight: 600;
     }
 }
-.kor img{
+
+.kor img {
     width: 20%;
     object-fit: contain;
 }
-.ima{
+
+.ima {
     display: flex;
     gap: 10px;
     padding-inline: 3px 0;
     padding-block: 10px 0;
 }
-.vw{
+
+.vw {
     width: 60px;
-border-radius: 5px;
+    border-radius: 5px;
     height: 35px;
-    background: #dcccce;
+    background: #f63715;
     text-align: center;
     align-items: center;
 }
-.vw img{
+
+.vw img {
 
     width: 50%;
     object-fit: contain;
+    margin-block: 2px 0;
 }
-.glav_box{
+
+.glav_box {
     padding-block: 30px 0;
     padding-inline: 30px 0;
     display: flex;
-    gap: 50px;
-   
-   
+    gap: 10px;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+
 }
-.itrm{
+.glav_box::-webkit-scrollbar{
+    outline: none;
+}
+.menu{
+    margin-block: 3px 0;
+    object-fit: contain;
+}
+.itrm {
+    flex: 0 0 300px; /* flex-grow, flex-shrink, flex-basis */
     display: flex;
     justify-content: center;
     align-items: center;
- gap: 15px;
-    width: 260px;
+    gap: 15px;
     height: 70px;
-    background: rgb(255, 255, 255);
+    background: rgb(243, 240, 240);
     border-radius: 10px;
-    p{
-        font-family: Raleway;
-        font-weight: 600;
-        color: #373738;
-    }
 }
-.bix_blav{
-    padding-block:50px 0;
+.itrm img{
+    width: 12%;
+}
+.sac{
+    width: 1%;
+}
+
+.bix_blav {
+    padding-block: 50px 0;
     padding-inline: 30px 0;
     width: 100%;
 }
-.bix_blav p{
+
+.bix_blav p {
     font-size: 25px;
     font-family: Poppins;
     font-weight: 600;
 }
-.boc{
-margin-block: 30px 0;
+
+.boc {
+    margin-block: 30px 0;
     width: 230px;
     height: 400px;
- 
+    /* width: 0%;
+    height: auto; */
 }
-.br{
+
+.br {
     display: flex;
     gap: 5px;
 }
-.tem{
+
+.tem {
     width: 170px;
     height: 25px;
     background: #333;
@@ -386,46 +435,54 @@ margin-block: 30px 0;
     font-family: Raleway;
     font-weight: 600;
 }
-.arr{
+
+.arr {
     width: 25px;
     height: 25px;
     border-radius: 5px;
     border: 1px solid #c4c4c4;
     color: rgb(3, 3, 3);
-   
+
     font-weight: 600;
     align-items: center;
     font-size: 20px;
 }
-.arro{
+
+.arro {
     width: 80%;
     text-align: center;
     align-items: center;
     padding-block: 2px 0;
 }
-.aad{
+
+.aad {
     width: 70%;
 }
-.fwwn{
+
+.fwwn {
     font-size: 18px;
     font-weight: 600;
     font-family: Raleway;
 }
-.fen{
+
+.fen {
     padding-block: 10px 0;
     font-size: 10px;
 }
-.cs{
+
+.cs {
     display: flex;
     gap: 20px;
     padding-inline: 3px 0;
 }
-.rub{
+
+.rub {
     font-size: 20px;
     font-weight: 600;
     font-family: Raleway;
 }
-.re{
+
+.re {
     font-size: 15px;
     font-weight: 600;
     font-family: Raleway;
@@ -433,7 +490,8 @@ margin-block: 30px 0;
     text-decoration: line-through;
     padding-block: 4px 0;
 }
-.blck{
+
+.blck {
     width: 40px;
     border-radius: 5px;
     height: 20px;
@@ -441,28 +499,32 @@ margin-block: 30px 0;
     align-items: center;
     text-align: center;
     color: white;
- padding-block: 3px 0;
-font-size: 14px;
-margin-block: 4px 0;
+ 
+    font-size: 14px;
+    margin-block: 4px 0;
 }
-.bd{
+
+.bd {
     padding-inline: 3px 0;
     padding-block: 5px 0;
-  
+
 }
-.cash{
+
+.cash {
     font-size: 15px;
     font-weight: 600;
     font-family: Raleway;
     color: #373738;
 }
-.num{
+
+.num {
     font-size: 15px;
     font-weight: 600;
     font-family: Raleway;
-    color: #de1335;
+    color: #f63715;
 }
-.sa{
+
+.sa {
     object-fit: contain;
     width: 12%;
 }
