@@ -21,6 +21,7 @@ let promo__title = document.querySelector('.promo__title')
 let promo__descr = document.querySelector('.promo__descr')
 let circ = document.querySelector('.circ')
 let dia = document.querySelector('dialog')
+let ull = document.querySelector('.promo__menu-list ul')
 for (let item of movies) {
 
     let li = document.createElement('li')
@@ -60,4 +61,53 @@ for (let item of movies) {
     circ.onclick = () => {
         dia.close()
     }
+    // let g = []
+    // item.Genre.forEach(elem => {
+    //     if (!g.includes(elem)) {
+    //         g.push(elem)
+    //     }
+    // })
+    // console.log(g);
+
+
 }
+let liii = document.createElement('li')
+let aa = document.createElement('a')
+aa.innerHTML = 'ALL'
+aa.classList.add('promo__menu-itemm')
+aa.href = '#'
+ull.append(liii)
+liii.append(aa)
+let gener = [...new Set(movies.map(item => item.Genre))]
+for (let item of gener) {
+    let lii = document.createElement('li')
+
+    let a = document.createElement('a')
+    a.classList.add('promo__menu-item')
+
+    a.innerHTML = item
+    a.href = '#'
+    ull.append(lii)
+    liii.append(aa)
+    lii.append(a)
+    lii.onclick = () => {
+        let ulls = document.querySelectorAll('#ull li')
+        ulls.forEach(i => {
+            i.classList.remove('promo__menu-item_active')
+        })
+
+        lii.classList.add('promo__menu-item_active')
+
+    }
+    liii.onclick = () => {
+        let ulls = document.querySelectorAll('#ull li')
+        ulls.forEach(i => {
+            i.classList.remove('promo__menu-item_active')
+        })
+        liii.classList.add('promo__menu-item_active')
+    }
+}
+
+
+
+
