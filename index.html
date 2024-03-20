@@ -1,68 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&family=Roboto+Condensed&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&amp;family=Poppins:wght@200;300;400&amp;family=Raleway&amp;display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="wrap">
+        <h1>Todo List</h1>
+        <form name="sign">
 
-    <center>
-        <h1 class="h1">В Корзине товаров 0</h1>
-        <div>
-            <button data-action="five" >Показать первые 5</button>
-            <button data-action="all" >Показать все</button>
-            <button id="menu" >Корзина</button>
-        </div>
-    </center>
-
-    <div class="menu">
-        <h2>Cart</h2>
-        <div class="wrapper">
-            <div class="items-cont">
-                <!-- <div class="cart-item" >
-                    <div class="left" >
-                        <img src="./public/images/bag.png" alt="">
-                        <div class="col" >
-                            <span class="title" >Title</span> <br>
-                            <span class="price" >Price</span>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="counter">
-                            <button>+</button>
-                            <input type="number" value="0" />
-                            <button>-</button>
-                        </div>
-                        <button>remove</button>
-                    </div>
-                </div> -->
+            <div class="box">
+                <input class="inp" type="text" name="ss">
+                <button class="in">Add</button>
             </div>
-        </div>
-        <div class="receipt">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Total:</td>
-                        <td></td>
-                        <td>100$</td>
-                    </tr>
-                    <tr>
-                        <td>Amount:</td>
-                        <td></td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <button>Checkout</button>
+        </form>
+        <div class="line"></div>
+        <div class="boxx">
+            <!-- <div class="bix">
+                <div class="ss">
+                    <p>Call mom</p>
+                    <img src="./xbutton_87873.png" alt="">
+                </div>
+                <h4>18:44</h4>
+            </div> -->
         </div>
     </div>
-
-    <div class="container">
-    </div>
-
-    <script type="module" src="./modules/index.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
