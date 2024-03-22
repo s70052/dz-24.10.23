@@ -1,60 +1,55 @@
-let form = document.forms.sign
-let inp = document.querySelector('.inp')
-let arrr = []
+
+
+
+
+const form = document.forms.login;
+const nam = document.querySelector('.name')
+const age = document.querySelector('.age')
+
+
+
 
 form.onsubmit = (e) => {
     e.preventDefault()
-    if (inp.value.trim() !== '') {
-        let todo = {
-            task: new FormData(form).get('ss'),
-            status: false,
-            id: Math.random(),
-            time: new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
-        }
-        inp.value = ''
-        console.log(todo)
-        arrr.push(todo)
-        console.log(arrr);
-        reload(arrr, boxx)
+
+    let fm = new FormData(form)
+    let user = {}
+
+    fm.forEach((val, key) => {
+        user[key] = val
+    })
+    if (nam.value && age.value !== '') {
+        modal.style.display = 'block'
+        console.log(user);
+    } else {
+        alert('Заполни все поля')
     }
 }
 
-let boxx = document.querySelector('.boxx')
-reload(arrr, boxx)
+const modal = document.querySelector('#myModal')
+const modal_content = document.querySelector('.modal-content')
+const select = document.querySelector('select')
+const p = document.querySelector('p')
+const closee = document.querySelector('.close')
 
-function reload(arr, place) {
-    place.innerHTML = ''
-    for (let item of arr) {
-        if (item.task.trim() !== '') {
-            let bix = document.createElement('div')
-            let ss = document.createElement('div')
-            let ss_p = document.createElement('p')
-            let ss_img = document.createElement('img')
-            let h4 = document.createElement('p')
+select.onclick = (event) => {
+    const option = event.target.value
 
-            bix.classList.add('bix')
-            ss.classList.add('ss')
-            ss_p.innerHTML = item.task
-            ss_img.src = './xbutton_87873.png'
-            h4.innerHTML = item.time
-            h4.classList.add('h4')
-
-            boxx.append(bix)
-            bix.append(ss, h4)
-            ss.append(ss_p, ss_img)
-
-            ss_img.onclick = () => {
-                arrr = arrr.filter(cartItem => cartItem !== item)
-                reload(arrr, boxx)
-            }
-        }
-    }
+    modal_content.classList.add('f')
+    p.innerHTML = 'Через 10 лет вы станете' + ' ' + option + ' ' + 'разработчиком'
 }
+// const options = document.querySelectorAll('option');
 
+// options.forEach(option => {
+//     option.onclick = (event) => {
+//         let selectedValue = event.target.value;
+       
+//         modal_content.classList.add('f')
+//         p.innerHTML = 'Через 10 лет вы станете' + ' ' + selectedValue + ' ' + 'разработчиком'
+//     }
+// })
 
-
-
-
-
-
+closee.onclick = () => {
+    modal.style.display = 'none'
+}
 
