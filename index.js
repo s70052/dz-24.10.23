@@ -36,14 +36,14 @@ select.onclick = (event) => {
     const option = event.target.value
 
     modal_content.classList.add('f')
-    p.innerHTML = 'Через 10 лет вы станете' + ' ' + option + ' ' + 'разработчиком'
+    p.innerHTML = 'Привет'+' ' + nam.value+' ' + 'Через 10 лет вы станете' + ' ' + option + ' ' + 'разработчиком'
 }
 // const options = document.querySelectorAll('option');
 
 // options.forEach(option => {
 //     option.onclick = (event) => {
 //         let selectedValue = event.target.value;
-       
+
 //         modal_content.classList.add('f')
 //         p.innerHTML = 'Через 10 лет вы станете' + ' ' + selectedValue + ' ' + 'разработчиком'
 //     }
