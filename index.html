@@ -7,43 +7,49 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="fm">
 
-    
+<div class="f">
+    <div class="ff">
+        <div class="fff">
     <div class="container">
         <form name="login">
             <div class="form-group">
                 <label for="age">Age:</label>
                 <input class="age" type="number" name="age" >
+                <p class="op"></p>
             </div>
             <div class="form-group">
                 <label for="age">Name:</label>
                 <input class="name" type="text" name="name" >
+                <p class="up"></p>
             </div>
+     
             <div class="form-group">
                 <label for="select">Select your programming language:</label>
-                <select name="select" id="select">
-                    <option value="не интересуюсь">Не выбранно</option>
+                <select name="language" id="select">
+                    <option value="not">Не выбранно</option>
                     <option value="Java">Java</option>
                     <option value="C++">C++</option>
                     <option value="C#">C#</option>
                     <option value="JavaScript">JavaScript</option>
                     <option value="Python">Python</option>
-                    
+                    <option value="not">Месси чушпан</option>
                 </select>
             </div>
             <button type="submit" class="btn">Submit</button>
             
         </form>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p class="pp">Это красивое модальное окно!</p>
-            </div>
-          </div>
     </div>
-    
+    </div>
+
 </div>
+    </div>
+    <dialog class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Congratulations <b id="name"></b></h1>
+        <p class="di_p"></p>
+    </dialog>
     <script src="./index.js"></script>
 </body>
 </html>
+
