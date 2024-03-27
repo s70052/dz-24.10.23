@@ -1,35 +1,55 @@
-
-const form = document.forms.namedItem('login')
-
-const inputs = form.querySelectorAll('input')
-const p = document.querySelector('.di_p')
+const form = document.forms.namedItem('login');
+const inputs = form.querySelectorAll('input');
+let errors = document.querySelector('.errors');
+let errorCount = 0
+let success = document.querySelector('.success')
+let success_count = 0
 let b = document.querySelector('#name')
-let age = document.querySelector('.age')
-const oop = document.querySelector('.op')
-const up = document.querySelector('.up')
-const namee = document.querySelector('.name')
+let p = document.querySelector('.di_p')
+let stat = false
+let v=document.querySelector('.All')
 const patterns = {
     name: /^[a-zA-Z]{3,10}$/i,
     age: /^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|200)$/,
-
 }
-
-
+success_count = inputs.length
 inputs.forEach((inp) => {
-    inp.onkeyup = () => {
-       
-        let b='От 3 до 10 букв'
+    inp.oninput = () => {
+        let label = inp.parentNode;
+        let span = label.querySelector('span');
+
         if (!patterns[inp.name].test(inp.value)) {
-            inp.style.border = '2px solid red'
-            up.innerHTML = 'Введите от 2 до 10 букв'
-          
+            if (!span.classList.contains('error1')) {
+
+                errorCount++
+                success_count--
+            }
+            inp.style.border='2px solid red'
+            label.classList.add('error1')
+            span.classList.add('error1')
+            span.style.display = 'flex'
+            stat = true
         } else {
-            inp.style.border = '2px solid blue'
-            up.innerHTML = ''
-          
+            if (span.classList.contains('error1')) {
+                errorCount--
+                success_count++
+            }
+            label.classList.remove('error1')
+            span.classList.remove('error1')
+            inp.style.border='2px solid blue'
+            span.style.display = 'none'
+            stat = false
         }
+        errors.innerHTML = errorCount
+        success.innerHTML = success_count
+       
     }
+    v.innerHTML=inputs.length
 })
+
+
+
+
 
 const modal_content = document.querySelector('dialog')
 form.onsubmit = (e) => {
@@ -48,12 +68,19 @@ form.onsubmit = (e) => {
         }
     })
     if (error) {
-        alert('dddd')
+        alert('Заполните все поля')
         return
     }
-    b.innerHTML = user.name
-    p.innerHTML = `Через 10 лет ты станешь ${user.language} разработчиком`
-    modal_content.showModal()
+
+    if (stat !== true) {
+
+        b.innerHTML = user.name
+        p.innerHTML = `Через 10 лет ты станешь ${user.language} разработчиком`
+        modal_content.showModal()
+
+    }else{
+        alert('Заполните все правильно')
+    }
 
 }
 
