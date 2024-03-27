@@ -16,7 +16,7 @@ success_count = inputs.length
 inputs.forEach((inp) => {
     inp.oninput = () => {
         let label = inp.parentNode;
-        let span = label.querySelector('span');
+        let span = document.querySelector('span');
 
         if (!patterns[inp.name].test(inp.value)) {
             if (!span.classList.contains('error1')) {
