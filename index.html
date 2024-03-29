@@ -5,67 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400&family=Raleway&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-
-    <div class="f">
-
-        <div class="ff">
-            <div class="fff">
-                <div class="container">
-
-                    <form name="login">
-
-                        <div class="form-group">
-
-                            <label for="name">
-                                Name:
-                                <input id="name" type="text" name="name">
-                                <span class="span">от 2 до 10 букв</span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="age">
-                                Age:
-                                <input id="age" type="number" name="age">
-                                <span class="span">введите правильный возраст</span>
-                            </label>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="select">Select your programming language:</label>
-                            <select name="language" id="select">
-                                <option value="not">Не выбранно</option>
-                                <option value="Java">Java</option>
-                                <option value="C++">C++</option>
-                                <option value="C#">C#</option>
-                                <option value="JavaScript">JavaScript</option>
-                                <option value="Python">Python</option>
-                                <option value="not">Месси чушпан</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn">Submit</button>
-
-                    </form>
+    <div class="wrap">
+        <form name="login">
+            <div class="box">
+                <div class="name">
+                    <p>Имя</p>
+                    <input type="text" name="name">
+                </div>
+                <div class="age">
+                    <p>Возраст</p>
+                    <input type="number" name="age">
+                </div>
+                <div class="bt">
+                    <button>Показать</button>
                 </div>
             </div>
-
+        </form>
+        <div class="dannie">
+            <h3 class="h3">No</h3>
+            <h3 class="h3">Имя студента</h3>
+            <h3 class="h3">Год рождения</h3>
+            <h3 class="h3">Действия</h3>
+        </div>
+        <div class="tb">
+            <!-- <table>
+            <tr>
+                <th class="e">1</th>
+                <th >Brucee Reys</th>
+                <th>1997</th>
+                <th>
+                    <div class="imgs">
+                        <img class="change" src="./8666681_edit_icon.svg" alt="dss">
+                        <img class="trash" src="./4781812_bin_delete_file_garbage_recycle_icon.png" alt="trash">
+                    </div>
+                </th>
+            </tr>
+        </table> -->
         </div>
     </div>
-    <dialog class="modal-content">
-        <span class="close">&times;</span>
-        <h1>Congratulations <b id="name"></b></h1>
-        <p class="di_p"></p>
-    </dialog>
-    <div class="values">
-    <h2>Error: <b class="errors">0</b></h2>
-    <h2>Success: <b class="success">0</b></h2>
-    
-    <h2>All: <b class="All">0</b></h2>
-</div>
-    <script src="./index.js"></script>
+        <script src="./index.js"></script>
 </body>
 
 </html>
