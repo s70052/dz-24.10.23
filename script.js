@@ -33,7 +33,7 @@ let arr = [
         url: './mp3/MACAN & SCIRENA - IVL.mp3',
         artist: 'MACAN & SCIRENA',
         duration: '3:20',
-        time: "9 день назад",
+        time: "9 дней назад",
         img: "./imgs/iyiIdIHMmV8.jpg.jpg"
     },
     {
