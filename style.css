@@ -191,3 +191,7 @@ audio::-webkit-media-controls-pause-button {
     filter: invert(100%);
 
 }
+marquee{
+    font-size: 20px;
+    color: orange;
+}
