@@ -5,7 +5,9 @@ let post = document.querySelector('.post2')
 fetch('https://jsonplaceholder.typicode.com/photos')
     .then((res) => res.json())
     .then((res) => reload(res.slice(0, 100)));
-
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then((res) => res.json())
+    .then((res) => reload2(res.slice(0, 100)));
 let dialog = document.querySelector('dialog')
 let dia = document.querySelector('.dia')
 let x = document.querySelector('.x')
@@ -14,6 +16,57 @@ let lupa = document.querySelector('.lupa')
 c.onkeyup = () => {
     lupa.style.display = 'none'
 }
+let tem = document.querySelector('.tem_box');
+function reload2(arr2) {
+    for (let item of arr2) {
+        tem.innerHTML += `
+    <div class="vsf">
+        <div class="tmm">
+            <img src="./img/Avatar.png" alt="">
+            <div class="nams">
+                <div class="navvv">
+                    <p>${item.name}</p>
+                    <span>comment</span>
+                </div>
+                <div class="bb">
+                    <p>51 нед</p>
+                    <p>нравится</p>
+                    <p>ответить</p>
+                </div>
+            </div>
+        </div>
+        <div class="immms">
+            <img class="white" src="./img/285639_heart_icon (1).png" alt="">
+            <img class="red" src="./img/211673_heart_icon (1).png" alt="">
+        </div>
+    </div>
+    `;
+
+ 
+    }
+    let whites = document.querySelectorAll('.white');
+    let reds = document.querySelectorAll('.red');
+
+    // Назначаем обработчики событий для каждой пары .white и .red
+    whites.forEach((white, index) => {
+        white.onclick = () => {
+            white.style.display = 'none';
+            reds[index].style.display = 'block';
+        };
+    });
+
+    reds.forEach((red, index) => {
+        red.onclick = () => {
+            red.style.display = 'none';
+            whites[index].style.display = 'block';
+        };
+    });
+}
+
+
+
+
+
 function reload(arr) {
 
     for (let item of arr) {
@@ -63,7 +116,7 @@ function reload(arr) {
         </div>
     </div>
     <div class="images">
-        <img src="${item.url}" alt="">
+        <img class='clc' src="${item.url}" alt="">
     </div>
     <div class="icon_box">
         <div class="icon_left">
@@ -158,7 +211,7 @@ function reload(arr) {
             two.src = './img/Icon (9).png'
             three.src = './img/Icon (10).png'
             four.src = './img/Vector (11).png'
-        
+
             pp.forEach(i => {
                 i.classList.add('nick')
             })
@@ -188,11 +241,11 @@ function reload(arr) {
             ind.classList.remove('a')
 
             ind.classList.remove('a')
-            logo.src='./img/Logo.png'
-            one.src='./img/Vector (5).png'
-            two.src='./img/Vector (6).png'
-            three.src='./img/Vector (7).png'
-            four.src='./img/Vector (8).png'
+            logo.src = './img/Logo.png'
+            one.src = './img/Vector (5).png'
+            two.src = './img/Vector (6).png'
+            three.src = './img/Vector (7).png'
+            four.src = './img/Vector (8).png'
             pp.forEach(i => {
                 i.classList.remove('nick')
             })
@@ -215,6 +268,13 @@ function reload(arr) {
         }
 
     }
+
+    let di_two = document.querySelector('.di_two')
+    let clc = document.querySelector('.clc')
+    clc.onclick = () => {
+        di_two.showModal()
+    }
+
     let hearts = document.querySelectorAll('.hear')
 
     hearts.forEach(heart => {
@@ -242,28 +302,15 @@ function reload(arr) {
             }
         }
     })
+
+
 }
 
 
 
 
-let shortText = document.getElementById("short-text");
-let fullText = document.getElementById("full-text");
-let showFullButton = document.getElementById("show-full-button");
-let showShortButton = document.getElementById("show-short-button");
 
-showFullButton.onclick = () => {
-    shortText.style.display = "none"
-    fullText.style.display = "block"
-    showFullButton.style.display = "none"
-    showShortButton.style.display = "block"
-}
 
-showShortButton.onclick = () => {
-    shortText.style.display = "block"
-    fullText.style.display = "none"
-    showFullButton.style.display = "block"
-    showShortButton.style.display = "none"
-}
+
 
 

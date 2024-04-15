@@ -13,6 +13,7 @@
     gap: 30px;
     animation: anim 3s ease-in-out 1s;
 }
+
 @keyframes anim {
     0% {
         transform: translateX(0) scale(0);
@@ -24,6 +25,7 @@
         opacity: 1;
     }
 }
+
 header {
     background-color: #FFFFFF;
     width: 100%;
@@ -41,10 +43,12 @@ header {
 body {
     background-color: #FAFAFA;
 }
-.w{
+
+.w {
     display: none;
     width: 40%;
 }
+
 .inp {
     position: relative;
 
@@ -134,14 +138,16 @@ input::placeholder {
     align-items: center;
 
 }
-.post2{
+
+.post2 {
     height: 780px;
     width: 620px;
     overflow-y: scroll;
-   overflow-x: hidden;
+    overflow-x: hidden;
 }
+
 .post {
-    
+
 
     width: 616px;
     height: 770px;
@@ -150,21 +156,24 @@ input::placeholder {
     border-radius: 5px;
     margin-block: 0 10px;
 }
+
 .post2::-webkit-scrollbar {
-    width: 8px; /* Ширина скроллбара */
+    width: 8px;
+    /* Ширина скроллбара */
 }
 
 .post2::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Цвет фона трека скроллбара */
+    background: #f1f1f1;
+    /* Цвет фона трека скроллбара */
 }
 
 .post2::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 4px;
 }
 
 .post2::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 .ml_rod1 {
@@ -204,7 +213,8 @@ input::placeholder {
 .images {
     width: 616px;
     height: 408px;
-    img{
+
+    img {
         width: 100%;
         height: 408px;
     }
@@ -221,28 +231,33 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
 }
-.bt{
+
+.bt {
     position: relative;
     left: 95%;
     top: -93px;
-   
+
 }
-.btt{
+
+.btt {
     position: relative;
     left: -3%;
     top: -93px;
-  
+
     transform: rotate(180deg);
 }
-.hea{
-    width: 20%;
+
+.hea {
+    width: 25%;
     object-fit: contain;
 }
-.he{
+
+.he {
     width: 80%;
     object-fit: contain;
     margin-right: -20px;
 }
+
 #show-full-button,
 #show-short-button {
     font-size: 12px;
@@ -335,7 +350,8 @@ h4 {
     width: 11%;
     object-fit: contain;
 }
-.moonn{
+
+.moonn {
     width: 11%;
     object-fit: contain;
     display: none;
@@ -437,6 +453,7 @@ h4 {
         color: #8E8E8E;
     }
 }
+
 .switchh {
 
     p {
@@ -446,61 +463,212 @@ h4 {
         margin-right: -10px;
     }
 }
-.scroll{
+
+.scroll {
     height: 282px;
-   overflow-y: scroll;
+    overflow-y: scroll;
 }
+
 .scroll::-webkit-scrollbar {
-    width: 5px; /* Ширина скроллбара */
+    width: 5px;
+    /* Ширина скроллбара */
 }
 
 .scroll::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Цвет фона трека скроллбара */
+    background: #f1f1f1;
+    /* Цвет фона трека скроллбара */
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 4px;
 }
 
 .scroll::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
-.a{
+
+.a {
     background-color: #000000;
 }
-.aa{
-    background-color:#181818;
+
+.aa {
+    background-color: #181818;
 }
+
 .nick {
     color: white;
 }
 
-dialog{
+.di_one {
     width: 50%;
     height: 50%;
     position: absolute;
     left: 20%;
     top: 20%;
     border: 0;
-   
+
     background: rgb(223, 40, 131);
 }
-.dia{
-    width:50%;
-  
-    
+
+.dia {
+    width: 50%;
+
+
 }
-.bb{
+
+.bb {
     align-items: center;
     display: flex;
     justify-content: space-between;
-   
+
 }
-.x{
+
+.x {
     font-size: 30px;
     margin-top: -290px;
 }
-dialog::-webkit-scrollbar{
+
+dialog::-webkit-scrollbar {
     outline: none;
+}
+
+.di_two {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 2.4%;
+    border: 0;
+}
+
+.img {
+    width: 70%;
+    object-fit: contain;
+
+    img {
+        width: 100%;
+     
+        object-fit: cover;
+    }
+}
+
+.glac {
+    display: flex;
+}
+.textsss{
+  
+}
+.ava{
+    display: flex;
+    justify-content: space-between;
+    gap: 270px;
+    align-items: center;
+    
+    padding: 10px;
+}
+.ava_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+   
+ 
+}
+.tem_box{
+    width: 390px;
+    height: 430px;
+    background: rgb(255, 255, 255);
+    overflow-y: scroll;
+    margin-inline: 10px 0;
+    align-items: center;
+    padding: 5px;
+    overflow-x: hidden;
+}
+
+.tem_box::-webkit-scrollbar {
+    width: 5px;
+    /* Ширина скроллбара */
+}
+
+.tem_box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Цвет фона трека скроллбара */
+}
+.vsvf{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        width: 170px;
+        height: 30px;
+        background-color: #0095F6;
+        font-size: 13px;
+        border: 0;
+        color: white;
+        font-weight: 500;
+        border-radius: 10px;
+        text-align: center;
+    }
+    p{
+        font-size: 14px;
+        color: #0095F6;
+font-weight: 500;
+    }
+}
+
+.tem_box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.tem_box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.tmm{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    img{
+        object-fit: contain;
+    }
+}
+.vsf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+margin-block: 0 10px;
+}
+.navvv{
+    display: flex;
+    gap: 5px;
+    p{
+        font-size: 13px;
+    }
+    span{
+        font-size:  13px;
+    }
+}
+.bb{
+    display: flex;
+    gap: 10px;
+    p{
+        font-size: 11px;
+    }
+}
+.immms{
+ position: relative;
+ left: 8%;
+ z-index: 111;
+    img{
+       
+        width: 40%;
+        object-fit: contain;
+       
+    }
+}
+.red{
+    display: none;
 }
