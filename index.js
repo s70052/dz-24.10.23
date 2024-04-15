@@ -17,6 +17,11 @@ c.onkeyup = () => {
     lupa.style.display = 'none'
 }
 let tem = document.querySelector('.tem_box');
+
+
+
+
+
 function reload2(arr2) {
     for (let item of arr2) {
         tem.innerHTML += `
@@ -42,7 +47,7 @@ function reload2(arr2) {
     </div>
     `;
 
- 
+
     }
     let whites = document.querySelectorAll('.white');
     let reds = document.querySelectorAll('.red');
@@ -66,7 +71,7 @@ function reload2(arr2) {
 
 
 
-
+let img = document.querySelector('.img')
 function reload(arr) {
 
     for (let item of arr) {
@@ -170,6 +175,15 @@ function reload(arr) {
         </div>
     </div>
         `
+        let di_two = document.querySelector('.di_two')
+        let clc = document.querySelector('.clc')
+        let forest=document.querySelector('.forest')
+        clc.onclick = () => {
+            di_two.showModal()
+            forest.src=item.url
+        }
+
+
         let mo = document.querySelector('.moon');
         let moon = document.querySelector('.moonn');
         let header = document.querySelector('header');
@@ -269,11 +283,7 @@ function reload(arr) {
 
     }
 
-    let di_two = document.querySelector('.di_two')
-    let clc = document.querySelector('.clc')
-    clc.onclick = () => {
-        di_two.showModal()
-    }
+   
 
     let hearts = document.querySelectorAll('.hear')
 
