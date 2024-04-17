@@ -5,9 +5,12 @@ let post = document.querySelector('.post2')
 fetch('https://jsonplaceholder.typicode.com/photos')
     .then((res) => res.json())
     .then((res) => reload(res.slice(0, 100)));
+fetch('https://jsonplaceholder.typicode.com/photos')
+    .then((res) => res.json())
+    .then((res) => rel(res.slice(0, 100)));
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((res) => res.json())
-    .then((res) => reload2(res.slice(0, 100)));
+    .then((res) => rel2(res.slice(0, 100)));
 let dialog = document.querySelector('dialog')
 let dia = document.querySelector('.dia')
 let x = document.querySelector('.x')
@@ -22,89 +25,39 @@ let tem = document.querySelector('.tem_box');
 
 
 
-function reload2(arr2) {
-    for (let item of arr2) {
-        tem.innerHTML += `
-    <div class="vsf">
-        <div class="tmm">
-            <img src="./img/Avatar.png" alt="">
-            <div class="nams">
-                <div class="navvv">
-                    <p>${item.name}</p>
-                    <span>comment</span>
-                </div>
-                <div class="bb">
-                    <p>51 нед</p>
-                    <p>нравится</p>
-                    <p>ответить</p>
-                </div>
-            </div>
-        </div>
-        <div class="immms">
-            <img class="white" src="./img/285639_heart_icon (1).png" alt="">
-            <img class="red" src="./img/211673_heart_icon (1).png" alt="">
-        </div>
-    </div>
-    `;
+// function reload2(arr2) {
+//     for (let item of arr2) {
+//         tem.innerHTML += `
+//     <div class="vsf">
+//         <div class="tmm">
+//             <img src="./img/Avatar.png" alt="">
+//             <div class="nams">
+//                 <div class="navvv">
+//                     <p>${item.name}</p>
+//                     <span>comment</span>
+//                 </div>
+//                 <div class="bb">
+//                     <p>51 нед</p>
+//                     <p>нравится</p>
+//                     <p>ответить</p>
+//                 </div>
+//             </div>
+//         </div>
+//         <div class="immms">
+//             <img class="white" src="./img/285639_heart_icon (1).png" alt="">
+//             <img class="red" src="./img/211673_heart_icon (1).png" alt="">
+//         </div>
+//     </div>
+//     `;
 
 
-    }
-    let whites = document.querySelectorAll('.white');
-    let reds = document.querySelectorAll('.red');
+//     }
 
-    // Назначаем обработчики событий для каждой пары .white и .red
-    whites.forEach((white, index) => {
-        white.onclick = () => {
-            white.style.display = 'none';
-            reds[index].style.display = 'block';
-        };
-    });
-
-    reds.forEach((red, index) => {
-        red.onclick = () => {
-            red.style.display = 'none';
-            whites[index].style.display = 'block';
-        };
-    });
-}
+// }
 
 
-
-
-let img = document.querySelector('.img')
-function reload(arr) {
-
+function rel(arr) {
     for (let item of arr) {
-        let ml_border = document.createElement('div')
-        let st_border = document.createElement('div')
-        let p = document.createElement('p')
-        p.innerHTML = 'nickname'
-        p.classList.add('p')
-        ml_border.classList.add('ml_border')
-        st_border.classList.add('st_border')
-        st_border.style.backgroundImage = `url('${item.url}')`
-        ul.append(ml_border)
-        ml_border.append(st_border)
-        st_border.append(p)
-
-        st_border.onclick = () => {
-            dialog.showModal()
-            dia.src = item.url
-        }
-        x.onclick = () => {
-            dialog.close()
-        }
-        scro.innerHTML += `
-        <div class="scroll_box">
-        <div class="minii">
-            <img src="${item.url}" alt="">
-            <div class="mii">
-                <p class='nick'>nickname</p>
-                <span>Suggestions For You</span>
-            </div>
-        </div>
-        <div class="switchh"><p>Follow</p></div>
-        `
         post.innerHTML += `
         <div class="glav_rod">
         <div class="ml_rod1">
@@ -175,13 +128,142 @@ function reload(arr) {
         </div>
     </div>
         `
-        let di_two = document.querySelector('.di_two')
-        let clc = document.querySelector('.clc')
-        let forest=document.querySelector('.forest')
-        clc.onclick = () => {
-            di_two.showModal()
-            forest.src=item.url
+  
+       
+    }
+    let clc = document.querySelectorAll('.clc')
+    let aca = document.querySelector('.aca')
+    let ccc = document.querySelector('.ccc')
+
+    clc.forEach(element => {
+        element.onclick = () => {
+            ccc.style.display = 'block'
+            aca.src = element.src
         }
+    })
+
+    let zad = document.querySelector('.zad')
+    zad.onclick = () => {
+        ccc.style.display = 'none'
+    }
+}
+let brx = document.querySelector('.brxx')
+function rel2(arr) {
+    for (let item of arr) {
+
+        brx.innerHTML += `
+
+        <div class="brx">
+        <div class="nnn">
+        <div class="brx_ml">
+            <img src="./img/Avatar.png" alt="">
+        </div>
+        <div class="brx_gl">
+            <div class="brr">
+                <p>${item.name}</p>
+                <p>🥰🥰</p>
+            </div>
+            <div class="bvv">
+                <p>51 нед,</p>
+                <p>нравится:1</p>
+                <p>ответить</p>
+            </div>
+        </div>
+    </div>
+        <div class="immms">
+            <img class="white" src="./img/285639_heart_icon (1).png" alt="">
+            <img class="red" src="./img/211673_heart_icon (1).png" alt="">
+        </div>
+    </div>
+`
+        let sssx = document.querySelector('.sssx')
+        let inp = document.querySelector('.indd')
+        sssx.onclick = () => {
+            brx.innerHTML += `
+
+            <div class="brx">
+            <div class="nnn">
+            <div class="brx_ml">
+                <img src="./img/Avatar.png" alt="">
+            </div>
+            <div class="brx_gl">
+                <div class="brr">
+                    <p>${item.name}</p>
+                    <p class='cccom'>${inp.value}</p>
+                </div>
+                <div class="bvv">
+                    <p>51 нед,</p>
+                    <p>нравится:1</p>
+                    <p>ответить</p>
+                </div>
+            </div>
+        </div>
+            <div class="immms">
+                <img class="white" src="./img/285639_heart_icon (1).png" alt="">
+                <img class="red" src="./img/211673_heart_icon (1).png" alt="">
+            </div>
+        </div>
+    `
+
+
+        }
+        let whites = document.querySelectorAll('.white');
+        let reds = document.querySelectorAll('.red');
+
+
+        whites.forEach((white, index) => {
+            white.onclick = () => {
+                white.style.display = 'none'
+                reds[index].style.display = 'block'
+            }
+        })
+
+        reds.forEach((red, index) => {
+            red.onclick = () => {
+                red.style.display = 'none'
+                whites[index].style.display = 'block'
+            }
+        })
+    }
+
+}
+
+let img = document.querySelector('.img')
+function reload(arr) {
+
+    for (let item of arr) {
+        let ml_border = document.createElement('div')
+        let st_border = document.createElement('div')
+        let p = document.createElement('p')
+        p.innerHTML = 'nickname'
+        p.classList.add('p')
+        ml_border.classList.add('ml_border')
+        st_border.classList.add('st_border')
+        st_border.style.backgroundImage = `url('${item.url}')`
+        ul.append(ml_border)
+        ml_border.append(st_border)
+        st_border.append(p)
+
+        st_border.onclick = () => {
+            dialog.showModal()
+            dia.src = item.url
+        }
+        x.onclick = () => {
+            dialog.close()
+        }
+        scro.innerHTML += `
+        <div class="scroll_box">
+        <div class="minii">
+            <img src="${item.url}" alt="">
+            <div class="mii">
+                <p class='nick'>nickname</p>
+                <span>Suggestions For You</span>
+            </div>
+        </div>
+        <div class="switchh"><p>Follow</p></div>
+        `
+
+
 
 
         let mo = document.querySelector('.moon');
@@ -283,7 +365,7 @@ function reload(arr) {
 
     }
 
-   
+
 
     let hearts = document.querySelectorAll('.hear')
 
@@ -315,6 +397,7 @@ function reload(arr) {
 
 
 }
+
 
 
 
