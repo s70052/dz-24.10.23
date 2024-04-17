@@ -142,7 +142,7 @@ function rel(arr) {
         }
     })
 
-    let zad = document.querySelector('.zad')
+    let zad = document.querySelector('.zar')
     zad.onclick = () => {
         ccc.style.display = 'none'
     }
