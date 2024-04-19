@@ -54,99 +54,199 @@ let tem = document.querySelector('.tem_box');
 //     }
 
 // }
-
-
+let ingage = document.querySelector('.ingage')
+let modal = document.querySelector('#modal')
+let closed=document.querySelector('.close')
 function rel(arr) {
     for (let item of arr) {
-        post.innerHTML += `
-        <div class="glav_rod">
-        <div class="ml_rod1">
+        // post.innerHTML += `
 
-            <img src="${item.url}" alt="">
-            <div class="textss">
-                <p>nickname</p>
-                <span class='city'>City, Country</span>
-            </div>
+        let glav_rod = document.createElement('div')
+        let ml_rod1 = document.createElement('div')
+        let img = document.createElement('img')
+        let textss = document.createElement('div')
+        let p = document.createElement('p')
+        let city = document.createElement('span')
 
-        </div>
-        <div class="ml_rod2">
-            <img src="./img/Icon (1).png" alt="">
-        </div>
-    </div>
-    <div class="images">
-        <img class='clc' src="${item.url}" alt="">
-    </div>
-    <div class="icon_box">
-        <div class="icon_left">
-            <img id='l' class='hear' src="./img/Vector (9).png" alt="">
-            <img id='ll' src="./img/Icon (2).png" alt="">
-            <img id='lll' src="./img/Icon (3).png" alt="">
-        </div>
-        <div class="icon_rigth">
-            <img id='llll' class='ins' src="./img/Vector (10).png" alt="">
-        </div>
-    </div>
-    <div id="text-container">
-        <p class='lik'>8,888 likes</p>
-        <div class='likes' id="short-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere delectus ab iure? Nisi,
-            ducimus. Praesentium cupiditate excepturi ullam tenetur odit vero facere, veritatis labore,
-            quibusdam laboriosam quidem. Beatae, explicabo voluptatum!
-            <b id="show-full-button">...more</b>
-        </div>
-        <div class='likes' id="full-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, hic autem iure quae
-            deleniti nemo voluptates quam at ut molestiae debitis asperiores recusandae magnam ips
-            <b id="show-short-button">...Unmore</b>
-        </div>
-        <span>View all 33 coments</span>
-        <div class="bux">
-            <div class="p">
-                <p class='likes'><b>nickname</b> Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="heart">
-                <img src="./img/Icon (4).png" alt="">
-            </div>
-        </div>
-        <div class="bux">
-            <div class="p">
-                <p class='likes'><b>nickname</b> Lorem ipsum dolor sit amet</p>
-            </div>
-            <div class="heart">
-                <img  src="./img/Icon (4).png" alt="">
-            </div>
-        </div>
-        <h4>1 hour ago</h4>
-    </div>
-    <div class="comment">
-        <div class="com">
-            <img class="smile" src="./img/Icon (6).png" alt="">
-            <input class='ind' placeholder="Add a comment..." type="text">
-        </div>
-        <div class="send">
-            <p>Post</p>
-        </div>
-    </div>
-        `
-  
-       
+        let ml_rod2 = document.createElement('div')
+        let img2 = document.createElement('img')
+        let images = document.createElement('div')
+        let img3 = document.createElement('img')
+        let icon_box = document.createElement('div')
+        let icon_left = document.createElement('div')
+        let l = document.createElement('img')
+        let ll = document.createElement('img')
+        let lll = document.createElement('img')
+        let icon_rigth = document.createElement('div')
+        let llll = document.createElement('img')
+        let text_container = document.createElement('div')
+        let lik = document.createElement('p')
+        let likes = document.createElement('div')
+        let likes2 = document.createElement('div')
+        let span = document.createElement('span')
+
+        let bux = document.createElement('div')
+        let p_div = document.createElement('div')
+        let likes_p = document.createElement('p')
+        let heart = document.createElement('div')
+        let img_heart = document.createElement('img')
+
+        let bux2 = document.createElement('div')
+        let p_div2 = document.createElement('div')
+        let likes_p2 = document.createElement('p')
+        let heart2 = document.createElement('div')
+        let img_heart2 = document.createElement('img')
+
+        let h4 = document.createElement('h4')
+
+        let comment = document.createElement('div')
+        let com = document.createElement('div')
+        let smile = document.createElement('img')
+        let ind = document.createElement('input')
+
+        let send = document.createElement('div')
+        let pp = document.createElement('p')
+
+
+        glav_rod.classList.add('glav_rod')
+        ml_rod1.classList.add('ml_rod1')
+        img.src = item.url
+        textss.classList.add('textss')
+        p.innerHTML = 'nickname'
+        city.classList.add('city')
+        city.innerHTML = 'City, Country'
+        ml_rod2.classList.add('ml_rod2')
+        img2.src = './img/Icon (1).png'
+        images.classList.add('images')
+        img3.classList.add('clc')
+        img3.src = item.url
+        icon_box.classList.add('icon_box')
+        icon_left.classList.add('icon_left')
+        l.classList.add('hear')
+        l.src = '/img/Vector (9).png'
+        ll.src = './img/Icon (2).png'
+        lll.src = './img/Icon (3).png'
+        icon_rigth.classList.add('icon_rigth')
+        llll.classList.add('ins')
+        llll.src = './img/Vector (10).png'
+        text_container.classList.add('text-container')
+        lik.classList.add('lik')
+        lik.innerHTML = '8,888 likes'
+        likes.classList.add('likes')
+        likes.innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere delectus ab iure? Nisi, ducimus. Praesentium cupiditate excepturi ullam tenetur odit vero facere, veritatis labore, quibusdam laboriosam quidem. Beatae, explicabo voluptatum!";
+        likes2.innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere delectus ab iure? Nisi, ducimus. Praesentium cupiditate excepturi ullam tenetur odit vero facere, veritatis labore, quibusdam laboriosam quidem. Beatae, explicabo voluptatum!";
+        likes2.classList.add('likes2')
+        span.innerHTML = 'View all 33 coments'
+        bux.classList.add('bux')
+        p_div.classList.add('p')
+        likes_p.innerHTML = 'nickname Lorem ipsum dolor sit amet'
+        heart.classList.add('heart')
+        img_heart.src = './img/Icon (4).png'
+        bux2.classList.add('bux')
+        p_div2.classList.add('p')
+        likes_p2.innerHTML = 'nickname Lorem ipsum dolor sit amet'
+        heart2.classList.add('heart')
+        img_heart2.src = './img/Icon (4).png'
+        h4.innerHTML = '1 hour ago'
+        comment.classList.add('comment')
+        com.classList.add('com')
+        smile.classList.add('smile')
+        smile.img = './img/Icon (6).png'
+        ind.classList.add('ind')
+        send.classList.add('send')
+        pp.innerHTML = 'Post'
+        text_container.classList.add('text-container')
+
+        post.append(glav_rod, images, icon_box, text_container, comment)
+        glav_rod.append(ml_rod1, ml_rod2)
+        ml_rod1.append(img, textss)
+        textss.append(p, city)
+        ml_rod2.append(img2)
+        images.append(img3)
+        icon_box.append(icon_left, icon_rigth)
+        icon_left.append(l, ll, lll)
+        icon_rigth.append(llll)
+        text_container.append(lik, likes, likes2, span, bux, bux2, h4)
+        bux.append(p_div, heart)
+        p_div.append(likes_p)
+        heart.append(img_heart)
+        bux2.append(p_div2, heart2)
+        p_div2.append(likes_p2)
+        heart2.append(img_heart2)
+        comment.append(com, send)
+        com.append(smile, ind)
+        send.append(pp)
+
+
+        img3.onclick = () => {
+            modal.style.display = 'flex'
+            ingage.src = item.url
+
+            Promise.all([
+                fetch("https://jsonplaceholder.typicode.com/comments?postId=" + item.id).then(res => res.json()),
+                fetch('https://jsonplaceholder.typicode.com/photos').then(res => res.json())
+            ]).then(([comments, photos]) => {
+                reloadComments(comments, photos.slice(0, 100));
+            });
+        }
+        closed.onclick=()=>{
+            modal.style.display = 'none'
+        }
     }
-    let clc = document.querySelectorAll('.clc')
-    let aca = document.querySelector('.aca')
-    let ccc = document.querySelector('.ccc')
 
-    clc.forEach(element => {
-        element.onclick = () => {
-            ccc.style.display = 'block'
-            aca.src = element.src
+
+    // clc.forEach(element => {
+    //     console.log(element.id);
+    //     element.onclick = () => {
+    //         ccc.style.display = 'block'
+    //         aca.src = element.src
+
+
+    //     }
+    // })
+
+
+}
+let com_com = document.querySelector('.comm')
+function reloadComments(arr, photos) {
+    for (let item of arr) {
+        com_com.innerHTML += `
+        <div class="com_ava">
+        <img src="./img/Avatar.png" alt="">
+        <p>Камрен</p>
+    </div>
+    <div class="com_box">
+    <div class="com_com">
+        <p>${item.body}</p>
+        </div>
+        <div class="icon1">
+            <img class="white" src="./img/285639_heart_icon (1).png" alt="">
+            <img class="red" src="./img/211673_heart_icon (1).png" alt="">
+        </div>
+    </div>
+     `
+    }
+    let whites = document.querySelectorAll('.white');
+    let reds = document.querySelectorAll('.red');
+
+
+    whites.forEach((white, index) => {
+        white.onclick = () => {
+            white.style.display = 'none'
+            reds[index].style.display = 'block'
         }
     })
 
-    let zad = document.querySelector('.zar')
-    zad.onclick = () => {
-        ccc.style.display = 'none'
-    }
+    reds.forEach((red, index) => {
+        red.onclick = () => {
+            red.style.display = 'none'
+            whites[index].style.display = 'block'
+        }
+    })
+
 }
+
+
 let brx = document.querySelector('.brxx')
 function rel2(arr) {
     for (let item of arr) {
@@ -207,23 +307,7 @@ function rel2(arr) {
 
 
         }
-        let whites = document.querySelectorAll('.white');
-        let reds = document.querySelectorAll('.red');
-
-
-        whites.forEach((white, index) => {
-            white.onclick = () => {
-                white.style.display = 'none'
-                reds[index].style.display = 'block'
-            }
-        })
-
-        reds.forEach((red, index) => {
-            red.onclick = () => {
-                red.style.display = 'none'
-                whites[index].style.display = 'block'
-            }
-        })
+ 
     }
 
 }
