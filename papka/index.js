@@ -1,32 +1,26 @@
-let form = document.forms.namedItem('us')
-let a = document.querySelector('.a')
+let form = document.forms.namedItem('us');
+
 const baseURL = "http://localhost:8080"
+
 form.onsubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     let user = {
         email: new FormData(form).get('email'),
-        id: String(Math.random()),
         password: new FormData(form).get('password')
-    }
-
-    console.log(user);
-
+    };
 
     fetch(baseURL + "/users")
-        .then(res => {
-            if (res.status === 201 || res.status === 200) {
-                fetch(baseURL + "/users")
-                    .then(res => res.json())
-                    .then(users => {
-                        users.forEach(userr => {
-                            if (userr.email === user.email && userr.password === user.password) {
-                                a.href = '/pages/regisrtation/'
-                                console.log(user.password);
-                            } else {
-                                alert('Неправильный пароль')
-                            }
-                        })
-                    })
+        .then(res => res.json())
+        .then(users => {
+            let foundUser = users.find(userr => userr.email === user.email && userr.password === user.password)
+            if (foundUser) {
+                location.assign('/pages/reee/')
+            } else {
+                alert('Неправильный email или пароль')
             }
+        })
+        .catch(error => {
+            console.error('Ошибка при получении данных с сервера:', error)
+            alert('Произошла ошибка. Пожалуйста, повторите попытку позже.')
         })
 }

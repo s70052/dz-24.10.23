@@ -83,7 +83,7 @@ form.onsubmit = (e) => {
           fetch(baseURL + "/users", conf)
             .then(res => {
               if (res.status === 201 || res.status === 200) {
-                pr.href = "/pages/login/"
+                location.assign('/pages/login/')
                 console.log('sssssssssss')
               }
             })
@@ -95,3 +95,5 @@ form.onsubmit = (e) => {
     console.log("Please fill in all fields.")
   }
 }
+
+
